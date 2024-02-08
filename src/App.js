@@ -1,10 +1,8 @@
 import './App.css';
 import Header from './components/Header';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
 import { Fragment } from 'react';
-import { Outlet } from "react-router-dom";
-import Main from './components/Main';
 
 function App() {
   const wrapper = {
@@ -16,7 +14,7 @@ function App() {
   return <>
     <Header/>
     <main style={wrapper}>
-      <Outlet />
+      <Outlet/>
     </main>
   </>;
 }

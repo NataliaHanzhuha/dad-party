@@ -32,6 +32,7 @@ function Header() {
       <button style={buttonStyles}
               onClick={() => toggleMenuButton()}>
         <img src={menu}
+             alt="menu button"
              width={30}
              height={30}/>
       </button>
