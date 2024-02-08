@@ -40,6 +40,7 @@ function Menu({toggleMenuHandler}) {
     <button className="little-close-btn">
       <img src={closeIcon}
            width={24}
+           alt="sss"
            onClick={toggleMenuHandler}/>
     </button>
 

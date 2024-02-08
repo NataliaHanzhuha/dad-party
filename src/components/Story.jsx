@@ -53,22 +53,25 @@ function Story() {
 
     <p style={textSummaryStyles}>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque debitis deserunt distinctio
-                                 facilis, nemo temporibus
-                                 veritatis. Accusamus eos numquam quibusdam soluta vitae voluptatibus? Aspernatur, nobis, quasi? Dicta eaque
-                                 iste omnis optio pariatur
-                                 provident voluptatem! Doloremque facere ipsam odio saepe!</p>
+      facilis, nemo temporibus
+      veritatis. Accusamus eos numquam quibusdam soluta vitae voluptatibus? Aspernatur, nobis, quasi? Dicta eaque
+      iste omnis optio pariatur
+      provident voluptatem! Doloremque facere ipsam odio saepe!</p>
 
     <h2>Timeline</h2>
 
     <div className="timeline-wrapper">
       {timelineYears.map((year) => {
-        return <div key={year} className="year-wrapper">
+        return <div key={year}
+                    className="year-wrapper">
           <div className="year">{year}</div>
 
           <div className="item-list">
             {timelineHash[year]?.map((item, index) => {
-              return <div className="item-wrapper" key={index}>
+              return <div className="item-wrapper"
+                          key={index}>
                 <img src={item?.image}
+                     alt="sss"
                      width="46%"
                      onClick={() => toggleFullSizePhoto(item)}/>
                 <div className="text">{item?.text}</div>
@@ -82,10 +85,13 @@ function Story() {
     {fullSizePhoto && <div className="full-size-wrapper">
       <button className="little-close-btn">
         <img src={closeIcon}
+             alt="sss"
              width={24}
              onClick={() => toggleFullSizePhoto(null)}/>
       </button>
-      <img src={fullSizePhoto.image}/>
+      <img src={fullSizePhoto.image}
+           alt="sss"
+      />
       <p>{fullSizePhoto.text}</p>
     </div>}
 
