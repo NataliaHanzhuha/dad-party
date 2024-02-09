@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react';
+import { useCallback, useEffect, useState } from 'react';
 import { wishCollectionRef } from '../firebase';
 import { addDoc, doc, getDocs, updateDoc } from 'firebase/firestore';
 import closeIcon from '../images/close.svg';
@@ -16,32 +16,33 @@ function Wishes() {
   const LSKey = 'wish-ids-list';
   const [userMessageIds, setUserMessages] = useState([]);
 
+  const refreshList = debounce(() => getMovieList(), 20 * 1000)
+
+  const getMovieList = useCallback(() => {
+      getDocs(wishCollectionRef).then(data => {
+        const filteredData = data.docs?.map((doc) => ({
+          ...doc.data(),
+          id: doc.id,
+        }));
+        setWishes(filteredData);
+        setLoading(false);
+        getSavedUserMessageIds();
+      });
+    }, []
+
+  );
+
   useEffect(() => {
     if (loading) {
-      getMovieList().then();
+      getMovieList();
     }
-  }, [loading]);
+  }, [loading, getMovieList]);
 
   useEffect(() => {
     refreshList();
 
     return () => refreshList.cancel();
   })
-
-  const refreshList = debounce(() => getMovieList(), 20 * 1000)
-
-  const getMovieList = () => {
-    return getDocs(wishCollectionRef).then(data => {
-      const filteredData = data.docs?.map((doc) => ({
-        ...doc.data(),
-        id: doc.id,
-      }));
-      setWishes(filteredData);
-      setLoading(false);
-      getSavedUserMessageIds();
-    });
-
-  };
 
   const getSavedUserMessageIds = () => {
     const existListStorage = localStorage[LSKey];
