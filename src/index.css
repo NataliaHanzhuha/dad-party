@@ -230,12 +230,12 @@ section {
 }
 
 .wish-wrapper:nth-child(even) {
-  align-self: end;
+  align-self: flex-end;
 }
 
 .wish-wrapper .name-wrapper {
   display: flex;
   gap: 10px;
-  justify-content: end;
+  justify-content: flex-end;
 }
 
