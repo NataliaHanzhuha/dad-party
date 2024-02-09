@@ -2,22 +2,17 @@ import menu from '../images/menu.svg';
 import React from 'react';
 import Menu from './Menu';
 import { Link } from 'react-router-dom';
+import logo from '../images/logo.svg';
 
 function Header() {
-  const buttonStyles = {
-    background: 'transparent',
-    border: 'none'
-  };
 
   const headerStyles = {
     display: 'flex',
     alignItems: 'center',
     justifyContent: 'space-between',
-    padding: '10px 0',
-    position: 'fixed',
-    top: 0,
-    width: '100%',
-    background: '#1c1c1c'
+    padding: '5px 10px',
+    background: '#3d3d3d',
+    zIndex: 2
   };
 
   const [toggleMenu, changeMenuState] = React.useState(false);
@@ -28,16 +23,16 @@ function Header() {
 
   return <>
     <header style={headerStyles}>
-      <Link to="/">Logo</Link>
-      <button style={buttonStyles}
-              onClick={() => toggleMenuButton()}>
+      <Link to="/">
+        <img src={logo} width={32} alt="logo"/>
+      </Link>
+      <button onClick={() => toggleMenuButton()}>
         <img src={menu}
              alt="menu button"
              width={30}
              height={30}/>
       </button>
     </header>
-    {toggleMenu}
     {toggleMenu ? <Menu toggleMenuHandler={() => toggleMenuButton()}/> : <></>}
   </>;
 }
