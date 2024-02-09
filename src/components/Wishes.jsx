@@ -3,7 +3,6 @@ import { wishCollectionRef } from '../firebase';
 import { addDoc, doc, getDocs, updateDoc } from 'firebase/firestore';
 import closeIcon from '../images/close.svg';
 import editIcon from '../images/edit.svg';
-import { debounce } from 'lodash';
 
 
 function Wishes() {
@@ -16,7 +15,7 @@ function Wishes() {
   const LSKey = 'wish-ids-list';
   const [userMessageIds, setUserMessages] = useState([]);
 
-  const refreshList = debounce(() => getMovieList(), 20 * 1000)
+  // const refreshList = debounce(() => getMovieList(), 20 * 1000);
 
   const getMovieList = useCallback(() => {
       getDocs(wishCollectionRef).then(data => {
@@ -29,7 +28,6 @@ function Wishes() {
         getSavedUserMessageIds();
       });
     }, []
-
   );
 
   useEffect(() => {
@@ -37,12 +35,12 @@ function Wishes() {
       getMovieList();
     }
   }, [loading, getMovieList]);
-
-  useEffect(() => {
-    refreshList();
-
-    return () => refreshList.cancel();
-  })
+  //
+  // useEffect(() => {
+  //   refreshList();
+  //
+  //   return () => refreshList.cancel();
+  // })
 
   const getSavedUserMessageIds = () => {
     const existListStorage = localStorage[LSKey];
