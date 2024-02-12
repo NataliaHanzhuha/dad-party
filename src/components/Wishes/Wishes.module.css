@@ -1,0 +1,62 @@
+
+.wishesWrapper {
+  gap: 10px;
+}
+
+.textarea,
+.input {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px;
+  /*margin: 0 10px;*/
+}
+
+.textarea {
+  height: 300px;
+}
+
+.wishesWrapper label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*width: 100%;*/
+  gap: 10px;
+  font-size: 20px;
+  padding: 0 10px;
+}
+
+.wishList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.wishWrapper {
+  display: flex;
+  flex-direction: column;
+  /*border: 1px solid var(--gold);*/
+  padding: 5px;
+  border-radius: 10px;
+  width: 80%;
+  background: var(--green);
+}
+
+.wishWrapper__text {
+  margin: 0;
+  font-weight: 700;
+  line-height: 1.7;
+}
+
+.wishWrapper:nth-child(even) {
+  align-self: flex-end;
+}
+
+.nameWrapper {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}

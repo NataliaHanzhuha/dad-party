@@ -1,0 +1,19 @@
+.text {
+  color: gray;
+  margin: 10px;
+  padding: 0;
+  display: inline-flex;
+  gap: 5px;
+}
+
+.link {
+  color: gray;
+  text-decoration: underline;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 10px;
+  align-items: center;
+}

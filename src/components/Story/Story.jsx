@@ -1,17 +1,11 @@
-import oldManPhoto from '../images/old-man.jpeg';
-import React from 'react';
-import closeIcon from '../images/close.svg';
+import oldManPhoto from '../../images/old-man.jpeg';
+import styles from './Story.module.css';
+
+import { Modal } from '../../utillits/Modal/Modal';
+import { useState } from 'react';
 
 function Story() {
-  const [fullSizePhoto, toggleFullSizePhoto] = React.useState(null);
-
-  const textSummaryStyles = {
-    textAlign: 'justify',
-    lineHeight: 1.5,
-    borderTop: '1px solid white',
-    paddingTop: '15px'
-  };
-
+  const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
   const timelineHash = {
     1951: [{
       image: oldManPhoto,
@@ -40,18 +34,16 @@ function Story() {
   };
   const timelineYears = Object.keys(timelineHash);
 
-  return <section id="biography">
+  const fullSizeImage = <div className={styles.fullSizeWrapper}>
+    <img src={fullSizePhoto?.image}
+         alt="sss"
+    />
+    <p>{fullSizePhoto?.text}</p></div>;
+
+  return <section>
     <h1>Biography</h1>
 
-    <iframe width="100%"
-            height="320px"
-            src="https://www.youtube.com/embed/8S3Yt-NxY0E?list=PLwyOlgrwwHqcq-OyxKFFxa3_ylnte5bSB"
-            title="Best 60s Dancer Boy Ever - The Nitty Gritty"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen></iframe>
-
-    <p style={textSummaryStyles}>
+    <p className={styles.textSummary}>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque debitis deserunt distinctio
       facilis, nemo temporibus
       veritatis. Accusamus eos numquam quibusdam soluta vitae voluptatibus? Aspernatur, nobis, quasi? Dicta eaque
@@ -60,21 +52,26 @@ function Story() {
 
     <h2>Timeline</h2>
 
-    <div className="timeline-wrapper">
+    <div className={styles.timelineWrapper}>
       {timelineYears.map((year) => {
         return <div key={year}
-                    className="year-wrapper">
-          <div className="year">{year}</div>
+                    className={styles.yearWrapper}>
+          <div className={styles.year}>{year}</div>
 
-          <div className="item-list">
+          <div className={styles.itemList}>
             {timelineHash[year]?.map((item, index) => {
-              return <div className="item-wrapper"
+              return <div className={styles.itemWrapper}
                           key={index}>
                 <img src={item?.image}
-                     alt="sss"
+                     alt={item?.text}
+                     // data-aos={index % 2 ? 'fade-left' : 'fade-right'}
+                     className={styles.image}
                      width="46%"
                      onClick={() => toggleFullSizePhoto(item)}/>
-                <div className="text">{item?.text}</div>
+                <div className={styles.line}></div>
+                <div className={styles.text}
+                     // data-aos={index % 2 ? 'fade-right' : 'fade-left'}
+                >{item?.text}</div>
               </div>;
             })}
           </div>
@@ -82,18 +79,9 @@ function Story() {
       })}
     </div>
 
-    {fullSizePhoto && <div className="full-size-wrapper">
-      <button className="little-close-btn">
-        <img src={closeIcon}
-             alt="sss"
-             width={24}
-             onClick={() => toggleFullSizePhoto(null)}/>
-      </button>
-      <img src={fullSizePhoto.image}
-           alt="sss"
-      />
-      <p>{fullSizePhoto.text}</p>
-    </div>}
+    {fullSizePhoto && <Modal closeModal={() => toggleFullSizePhoto(null)}
+                             header="Photo"
+                             content={fullSizeImage}></Modal>}
 
   </section>;
 }

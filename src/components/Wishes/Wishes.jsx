@@ -1,9 +1,9 @@
 import { useCallback, useEffect, useState } from 'react';
-import { wishCollectionRef } from '../firebase';
+import { wishCollectionRef } from '../../firebase';
 import { addDoc, doc, getDocs, updateDoc } from 'firebase/firestore';
-import closeIcon from '../images/close.svg';
-import editIcon from '../images/edit.svg';
-
+import editIcon from '../../images/icons/edit.svg';
+import { Modal } from '../../utillits/Modal/Modal';
+import styles from './Wishes.module.css';
 
 function Wishes() {
   const [wishes, setWishes] = useState([]);
@@ -94,21 +94,12 @@ function Wishes() {
     setLoading(true);
   };
 
-  const form = <div className="modal">
-    <header>
-      <h2>Add your wish to list</h2>
-      <button className="little-close-btn">
-        <img src={closeIcon}
-             width={24}
-             alt="sss"
-             onClick={closeModal}/>
-      </button>
-    </header>
-
+  const formContent = <>
     <label htmlFor="textarea">Your Wishes
       <textarea placeholder="Enter something for birthday guy"
                 value={wish}
-                autoFocus="true"
+                className={styles.textarea}
+                autoFocus={true}
                 onChange={(e) => setWish(e.target.value)}></textarea>
     </label>
 
@@ -116,6 +107,7 @@ function Wishes() {
     <label htmlFor="input">Your Name (optional)
       <input placeholder="Your name"
              value={name}
+             className={styles.input}
              onInput={(e) => setName(e.target.value)}/>
     </label>
 
@@ -123,15 +115,19 @@ function Wishes() {
             disabled={!wish.trim().length}
             onClick={submitForm}>Send
     </button>
-  </div>;
+  </>;
 
-  const wishList = <div className="wish-list">
+  const form = <Modal closeModal={closeModal}
+                      header="Add your wish to list"
+                      content={formContent}></Modal>;
+
+  const wishList = <div className={styles.wishList}>
     {wishes?.map((wish, index) => {
-      return <div className="wish-wrapper"
+      return <div className={styles.wishWrapper}
                   key={index}>
-        <div>{wish.text} </div>
+        <p>{wish.text} </p>
 
-        <div className="name-wrapper">
+        <div className={styles.nameWrapper}>
           <i>{wish.name}</i>
           {userMessageIds.includes(wish?.id)
             && <button onClick={() => setEditForm(wish)}>
@@ -145,8 +141,7 @@ function Wishes() {
     })}
   </div>;
 
-  return <section id="wishes"
-                  className="wishes-wrapper">
+  return <section className={styles.wishesWrapper}>
     <h1>Well Wishes</h1>
     <button className="big-close-btn"
             onClick={() => toggleForm(true)}>Add your wish to list

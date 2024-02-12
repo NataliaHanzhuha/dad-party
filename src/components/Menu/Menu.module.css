@@ -1,0 +1,21 @@
+.menu {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  height: 100vh;
+  justify-content: center;
+}
+
+.button {
+  margin-top: 100px;
+  padding: 10px 50px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+}

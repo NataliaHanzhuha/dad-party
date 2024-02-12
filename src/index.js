@@ -4,9 +4,9 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Main from './components/Main';
-import Story from './components/Story';
-import Wishes from './components/Wishes';
+import Main from './components/Main/Main';
+import Story from './components/Story/Story';
+import Wishes from './components/Wishes/Wishes';
 import PartyMenu from './components/PartyMenu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
