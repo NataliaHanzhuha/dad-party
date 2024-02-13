@@ -24,7 +24,7 @@ function Main() {
 
     <video ref={videoRef}
            autoPlay
-           width="125%"
+           className={styles.video}
            loop
            muted>
       <source src={blinksVideo}
