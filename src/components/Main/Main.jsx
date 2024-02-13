@@ -20,7 +20,7 @@ function Main() {
       video.removeEventListener('ended', handleEnded);
     };
   }, []);
-  return <section className="overflow-hidden">
+  return <section className={styles.section}>
 
     <video ref={videoRef}
            autoPlay
