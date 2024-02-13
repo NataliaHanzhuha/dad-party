@@ -16,7 +16,7 @@
 }
 
 .blinksTop {
-  position: absolute;
+  position: fixed;
   top: 195px;
   rotate: 0deg;
   object-position: bottom center;

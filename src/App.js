@@ -19,7 +19,7 @@ function App() {
   };
   return <>
     <header className={styles.header}>
-      <Link to="/">
+      <Link to="/wishes">
         <img src={logo}
              width={32}
              alt="logo"/>
