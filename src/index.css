@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
+@font-face {
+  font-family: AdobeGaramondPro;
+  src: url("fonts/Adobe-Garamond-Pro-Regular.ttf");
+}
+
 :root {
   --gold: #ddb86d;
-  --black: #1c1c1c;
+  --black: #0c0c0c;
   --white: #ececec;
   --green: #164b2b;
 }
+
 
 * {
   font-family: 'Montserrat', sans-serif;
@@ -36,6 +42,14 @@ main {
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
+}
+
+video {
+  background-image: linear-gradient(to top, #000000, #121212, #1e1e1e, #292929, #353535);
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 a {
@@ -100,7 +114,7 @@ section {
   display: flex;
   align-items: center;
   height: 55px;
-  background: #505050;
+  /*background: #505050;*/
   border-bottom-right-radius: 10px;
   border-bottom-left-radius: 10px;
   padding: 0 10px;
