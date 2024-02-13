@@ -8,7 +8,7 @@ function Menu({toggleMenuHandler}) {
     {path: '/', name: 'Home'},
     {path: '/biography', name: 'Biography'},
     {path: '/well-wishes', name: 'Well Wishes'},
-    {path: '/party-menu', name: 'Party Main'}
+    {path: '/party-menu', name: 'Party Menu'}
   ];
 
   const menu = <>
