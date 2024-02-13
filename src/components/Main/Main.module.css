@@ -1,35 +1,25 @@
-.title {
-  font-family: AdobeGaramondPro serif;
-}
-
 .yearImage {
-  transform: translateY(15%);
+  transform: translateY(-5%);
+  width: 120%;
+  padding-left: 18px;
+
   box-shadow: 1px -63px 32px 6px rgba(0,0,0,0.52);
 }
 
 .blinksBottom {
   rotate: 180deg;
-  background: #080808;
-  height: 150px;
+  background: var(--black);
+  height: 160px;
   object-fit: cover;
   object-position: bottom center;
+  transform: translateY(30%);
 }
 
 .blinksTop {
   position: absolute;
-  top: 230px;
+  top: 195px;
   rotate: 0deg;
   object-position: bottom center;
   object-fit: fill;
   z-index: 2;
-}
-
-.shadow {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 1) 100%); /* Radial gradient for shadow */
-  z-index: 1;
 }

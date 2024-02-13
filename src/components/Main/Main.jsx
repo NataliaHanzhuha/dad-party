@@ -31,13 +31,12 @@ function Main() {
               type="video/mp4"/>
       Your browser does not support the video tag.
     </video>
-    {/*<div className={styles.shadow}></div>*/}
+
     <img src={blinksTop}
          alt="blinks"
          className={styles.blinksTop}
          width="100%"/>
     <img src={yearsCard}
-         width='100%'
          className={styles.yearImage}
          alt="70 years birthday card"/>
     <img src={blinksBottom}
