@@ -70,10 +70,10 @@ section {
   object-fit: cover;
   object-position: bottom center;
   width: 100%;
-  bottom: 22px;
+  bottom: 0;
   rotate: 180deg;
   z-index: 0;
-  height: 150px;
+  height: 170px;
   filter: brightness(0.5);
 }
 
