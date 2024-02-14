@@ -1,0 +1,41 @@
+.h1 {
+  margin: 0;
+}
+
+.section {
+  gap: 10px;
+}
+
+.menuWrapper {
+  backdrop-filter: contrast(0.5);
+  border-radius: 30px;
+  padding: 20px 0;
+  margin-bottom: 20px;
+  z-index: 1;
+}
+
+.dishWrapperStyles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+  gap: 10px;
+}
+
+.typeWrapperStyles {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.typeHeaderStyles {
+  text-transform: uppercase;
+  margin: 0
+}
+
+.dishNameStyle {
+  text-transform: uppercase;
+  margin: 0;
+  color: var(--gold);
+}

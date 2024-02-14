@@ -7,7 +7,7 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './components/Main/Main';
 import Story from './components/Story/Story';
 import Wishes from './components/Wishes/Wishes';
-import PartyMenu from './components/PartyMenu';
+import PartyMenu from './components/PartyMenu/PartyMenu';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 

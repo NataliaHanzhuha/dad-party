@@ -65,6 +65,18 @@ section {
   justify-content: center;
 }
 
+.bg-bottom-image {
+  position: absolute;
+  object-fit: cover;
+  object-position: bottom center;
+  width: 100%;
+  bottom: 22px;
+  rotate: 180deg;
+  z-index: 0;
+  height: 150px;
+  filter: brightness(0.5);
+}
+
 .little-close-btn {
   background: transparent;
   border: 1px solid var(--white);
