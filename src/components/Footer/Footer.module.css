@@ -17,5 +17,5 @@
   padding: 0 10px;
   align-items: center;
   background: var(--black);
-  z-index: 2;
+  z-index: 5;
 }

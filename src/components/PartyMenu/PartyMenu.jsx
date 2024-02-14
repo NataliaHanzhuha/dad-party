@@ -30,7 +30,7 @@ function PartyMenu() {
           {menuHash[item].map((dish, index) => {
             return <div className={styles.dishWrapperStyles} key={index}>
               <h3 className={styles.dishNameStyle}>{dish.name}</h3>
-              {dish.description && <div className="dish-description">{dish.description}</div>}
+              {dish.description && <i className="dish-description">{dish.description}</i>}
             </div>
           })}
         </div>
