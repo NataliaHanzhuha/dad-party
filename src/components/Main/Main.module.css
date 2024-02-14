@@ -14,7 +14,7 @@
 }
 .blinksBottom {
   rotate: 180deg;
-  background: var(--black);
+  /*background: var(--black);*/
   height: 160px;
   object-fit: cover;
   object-position: bottom center;
@@ -39,8 +39,12 @@
     top: 167px;
   }
 
+  .yearImage {
+    transform: translateY(-23vh);
+  }
+
   .blinksBottom {
-    transform: translateY(21vh);
+    transform: translateY(28vh);
   }
 }
 
