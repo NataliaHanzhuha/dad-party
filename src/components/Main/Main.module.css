@@ -9,6 +9,9 @@
   box-shadow: 1px -63px 32px 6px rgba(0,0,0,0.52);
 }
 
+.video {
+  z-index: 1;
+}
 .blinksBottom {
   rotate: 180deg;
   background: var(--black);
