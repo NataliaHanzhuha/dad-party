@@ -25,7 +25,7 @@ function Main() {
     {loading && <img src={preview}
                      width="100%"
                      height="216px"
-                     atl="video preview"/>}
+                     alt="video preview"/>}
     <video ref={videoRef}
            autoPlay
            className={styles.video}
