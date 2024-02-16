@@ -22,7 +22,10 @@ function Main() {
   }, []);
 
   return <section className={styles.section}>
-    {loading && <img src={preview} width="100%" height="216px" />}
+    {loading && <img src={preview}
+                     width="100%"
+                     height="216px"
+                     atl="video preview"/>}
     <video ref={videoRef}
            autoPlay
            className={styles.video}
@@ -38,7 +41,7 @@ function Main() {
     <img src={yearsCard}
          className={styles.yearImage}
          alt="70 years birthday card"/>
-  </section>
+  </section>;
 }
 
 export default Main;
