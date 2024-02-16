@@ -1,4 +1,4 @@
-import blinksBottom from '../../images/blinks_bottom.png';
+import blinksBottom from '../../images/bottom.png';
 import styles from './PartyMenu.module.css';
 
 function PartyMenu() {

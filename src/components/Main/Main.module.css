@@ -1,61 +1,57 @@
 .section {
   justify-content: space-between;
   overflow: hidden;
+  height: 100%;
 }
+
+.section::before,
+.section::after {
+  content: '';
+  z-index: 4;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: brightness(0.7);
+}
+
+.section::before {
+  background-image: url("../../images/blinks-top.png");
+  top: 22vh;
+  height: 20vh;
+}
+
+.section::after {
+  background-image: url("../../images/bottom.png");
+  bottom: 0;
+  height: clamp(140px, calc(100vh - 650px), 300px);
+  background-position: top center;
+}
+
 .yearImage {
-  transform: translateY(-5%);
-  width: 120%;
-  padding-left: 18px;
-  box-shadow: 1px -63px 32px 6px rgba(0,0,0,0.52);
+  width: 97vw;
+  flex: 1 1;
+  align-self: baseline;
+  object-fit: contain;
+  position: absolute;
+  top: 250px;
 }
 
 .video {
   z-index: 1;
-}
-.blinksBottom {
-  rotate: 180deg;
-  /*background: var(--black);*/
-  height: 160px;
-  object-fit: cover;
-  object-position: bottom center;
-  transform: translateY(30%);
-}
-
-.blinksTop {
-  position: fixed;
-  top: 195px;
-  rotate: 0deg;
-  object-position: bottom center;
-  object-fit: fill;
-  z-index: 2;
+  width: 100%;
 }
 
 @media screen and (max-height: 670px) {
   .video {
     transform: translateY(-6vh);
   }
-
-  .blinksTop {
-    top: 167px;
-  }
-
-  .yearImage {
-    transform: translateY(-23vh);
-  }
-
-  .blinksBottom {
-    transform: translateY(28vh);
-  }
 }
 
 @media screen and (max-height: 740px) {
-  .yearImage {
-    transform: translateY(-16vh);
-  }
+
 }
 
-@media screen and (min-height: 930px) {
-  .blinksBottom {
-    height: 200px;
-  }
+@media screen and (min-height: 840px) {
 }

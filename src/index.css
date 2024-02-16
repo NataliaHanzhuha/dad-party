@@ -68,10 +68,10 @@ section {
 .bg-bottom-image {
   position: absolute;
   object-fit: cover;
-  object-position: bottom center;
+  object-position: top center;
   width: 100%;
   bottom: 0;
-  rotate: 180deg;
+  /*rotate: 180deg;*/
   z-index: 0;
   height: 170px;
   filter: brightness(0.5);
