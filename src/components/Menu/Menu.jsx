@@ -15,6 +15,7 @@ function Menu({toggleMenuHandler}) {
     <menu className={styles.menu}>
       {routes.map((route, index) =>
         <h2 key={index}
+            className={styles.menuItem}
             onClick={toggleMenuHandler}>
           <Link to={route.path}>{route.name}</Link>
         </h2>)}

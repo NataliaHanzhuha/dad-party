@@ -1,6 +1,7 @@
 
 .wishesWrapper {
   gap: 10px;
+  margin-bottom: 100px;
 }
 
 .textarea,
@@ -60,3 +61,12 @@
   gap: 10px;
   justify-content: flex-end;
 }
+@media screen and (min-width: 768px) {
+  .wishesWrapper {
+    width: 100%;
+    max-width: 800px;
+    margin: auto auto 300px;
+  }
+}
+
+
