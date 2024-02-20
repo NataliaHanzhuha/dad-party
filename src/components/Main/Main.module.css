@@ -94,6 +94,31 @@
 
 }
 
+@media screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+ .section {
+   flex-direction: row;
+   align-items: center;
+ }
+
+  .section::before {
+    top: 0;
+    height: 40vh;
+  }
+
+  .section::after {
+    height: 300px;
+  }
+
+  .yearImage {
+    position: static;
+    width: 50%;
+  }
+
+  .video {
+    width: 49%;
+  }
+}
+
 @keyframes slide {
   from {
     opacity: 1;

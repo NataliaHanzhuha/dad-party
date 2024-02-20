@@ -4,6 +4,12 @@
   padding: 0;
   display: inline-flex;
   gap: 5px;
+  flex-wrap: wrap;
+}
+
+.linkWrapper {
+  display: inline-flex;
+  gap: 5px;
 }
 
 .link {
@@ -13,12 +19,13 @@
 
 .footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 0 10px;
   align-items: center;
   background: var(--black);
   z-index: 5;
   position: fixed;
   bottom: 0;
+  column-gap: 15px;
   width: -webkit-fill-available;
 }

@@ -10,19 +10,22 @@ const linkedIn = "https://www.linkedin.com/in/nataliia-hanzhuha-41a058242/";
          className={styles.link}>Nata Hanzhuha</a>
     </p>
 
+    <div className={styles.linkWrapper}>
+      <a href={linkedIn}>
+        <img src={linkedinIcon}
+             width={24}
+             height={24}
+             alt="linked in logo"/>
+      </a>
 
-    <a href={linkedIn}>
-      <img src={linkedinIcon}
-           width={24}
-           height={24}
-           alt="linked in logo"/>
-    </a>
+      <a href="mailto:nataliiahanzhuha@gmail.com">
+        <img src={mailIcon}
+             width={24}
+             alt="mail logo"/>
+      </a>
+    </div>
 
-    <a href="mailto:nataliiahanzhuha@gmail.com">
-      <img src={mailIcon}
-           width={24}
-           alt="mail logo"/>
-    </a>
+
   </footer>;
 }
 

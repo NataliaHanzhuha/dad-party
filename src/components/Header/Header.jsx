@@ -15,14 +15,12 @@ function Header() {
   return <>
     <header className={styles.header}>
       <Link to="/">
-        <img src={logo} width={32} alt="logo"/>
+        <img src={logo} alt="logo"/>
       </Link>
 
       <button onClick={() => toggleMenuButton()}>
         <img src={menu}
-             alt="menu button"
-             width={30}
-             height={30}/>
+             alt="menu button"/>
       </button>
     </header>
 
