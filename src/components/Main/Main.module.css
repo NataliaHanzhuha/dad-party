@@ -1,33 +1,35 @@
 .section {
   justify-content: space-between;
   overflow: hidden;
-  height: 100%;
+  height: 100vh;
 }
 
-.section::before,
-.section::after {
+.section::before {
   content: '';
   z-index: 2;
   position: absolute;
   left: 0;
   width: 100%;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-size: contain;
+  background-repeat: repeat no-repeat;
   filter: brightness(0.7);
-}
-
-.section::before {
   background-image: url("../../images/blinks-top.png");
-  top: 22vh;
-  height: 20vh;
+  top: 19vh;
+  height: 250px;
+  /*transform: translateY(-53vh);*/
+  /*background-position: bottom center;*/
 }
 
-/*.section::after {*/
-/*  background-image: url("../../images/bottom.png");*/
-/*  bottom: 0;*/
-/*  height: clamp(140px, calc(100vh - 600px), 300px);*/
-/*  background-position: top center;*/
-/*}*/
+.section::after {
+  z-index: 2;
+}
+
+.previewImage {
+  object-fit: contain;
+  width: 70%;
+  transform: translateY(-8vh);
+  animation: pulse 8s infinite;
+}
 
 .yearImage {
   width: 97vw;
@@ -35,28 +37,37 @@
   align-self: baseline;
   object-fit: contain;
   position: absolute;
-  top: clamp(150px, 27vh, 250px);
+  top: clamp(150px, 27vh, 190px);
 }
 
 .video {
-  z-index: 1;
   width: 100%;
+  z-index: 1;
+}
+:root {
+  --min-height: -8vh;
+  --max-height: -8vh;
+  --min-scale: .9;
+  --max-scale: 1;
 }
 
-@media screen and (max-height: 670px) {
+
+@media only screen and (max-height: 670px) {
   .video {
     transform: translateY(-6vh);
   }
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-height: 1024px) {
   .section {
     justify-content: center;
     align-items: center;
+    height: 100%;
   }
 
   .section::before {
     top: 0;
+    height: 40vh;
   }
 
   .section::after {
@@ -67,7 +78,7 @@
     position: relative;
     width: 90vw;
     max-width: 750px;
-    transform: translateY(-15vh);
+    transform: translateY(-7vh);
     top: 0;
     align-self: auto;
     animation: slide1 3s ease-in-out 40s forwards;
@@ -77,26 +88,47 @@
     position: absolute;
     width: 100%;
     animation: slide 5s ease-in-out 3s forwards;
-    height: 100%;
+    height: 90vh;
     background: black;
   }
 
-  @keyframes slide {
-    from {
-      opacity: 1;
-    }
-    to {
-      opacity: 0;
-    }
-  }
+}
 
-  @keyframes slide1 {
-    from {
-      display: none;
-    }
-    to {
-      display: block;
-    }
+@keyframes slide {
+  from {
+    opacity: 1;
   }
+  to {
+    opacity: 0;
+    height: 0;
+  }
+}
 
+@keyframes slide1 {
+  from {
+    display: none;
+  }
+  to {
+    display: block;
+  }
+}
+
+
+@keyframes pulse {
+
+  0% {
+    transform: scale(var(--min-scale)) translateY(var(--min-height));
+  }
+  15% {
+    transform: scale(var(--max-scale)) translateY(var(--max-height));
+  }
+  30% {
+    transform: scale(var(--min-scale)) translateY(var(--min-height));
+  }
+  45% {
+    transform: scale(var(--max-scale)) translateY(var(--max-height));
+  }
+  100% {
+    transform: scale(var(--min-scale)) translateY(var(--min-height));
+  }
 }

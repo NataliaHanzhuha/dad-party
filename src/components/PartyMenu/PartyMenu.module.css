@@ -4,7 +4,7 @@
 
 .section {
   gap: 40px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .menuWrapper {
@@ -24,7 +24,7 @@
   align-items: center;
   flex-direction: column;
   text-align: center;
-  gap: 10px;
+  /*gap: 10px;*/
 }
 
 .typeWrapperStyles {
