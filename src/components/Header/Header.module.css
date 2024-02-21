@@ -6,7 +6,9 @@
   /*background: #3d3d3d;*/
   z-index: 9;
   position: sticky;
-  top: 0
+  top: 0;
+  animation-duration: 3s;
+  animation-name: fadeIn;
 }
 
 .header img {

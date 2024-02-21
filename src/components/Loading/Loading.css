@@ -1,0 +1,66 @@
+#loader-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#loader {
+  max-width: 50vw;
+}
+
+#loader path {
+  stroke-width: 2px;
+  stroke-dasharray: 100%;
+  stroke-dashoffset: 100%;
+  stroke: var(--gold);
+}
+#loader path:nth-child(2) {
+  stroke-dasharray: 200%;
+  stroke-dashoffset: 200%;
+  animation: strokeAnimate 2s 0s ease forwards;
+}
+
+#loader path:nth-child(3) {
+  animation: strokeAnimate 2s 0.3s ease forwards;
+}
+#loader path:nth-child(4) {
+  animation: strokeAnimate 2s 0.9s ease forwards;
+}
+#loader path:nth-child(5) {
+  animation: strokeAnimate 2s 1.2s ease forwards;
+}
+#loader path:nth-child(6) {
+  animation: strokeAnimate 2s 1.5s ease forwards;
+}
+#loader path:nth-child(7) {
+  animation: strokeAnimate 2s 1.8s ease forwards;
+}
+#loader path:nth-child(8) {
+  animation: strokeAnimate 2s 2.1s ease forwards;
+}
+
+@keyframes strokeAnimate {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+/*@media screen and (max-width: 768px) {*/
+/*  #loader-container {*/
+/*    !*max-width: 150px;*!*/
+/*  }*/
+/*  #loader {*/
+/*    !*width: 150px;*!*/
+/*  }*/
+/*}*/
+
+/*@media screen and (max-width: 650px) {*/
+/*  #loader-container {*/
+/*    max-width: 100px;*/
+/*  }*/
+/*  #loader {*/
+/*    width: 100px;*/
+/*  }*/
+/*}*/

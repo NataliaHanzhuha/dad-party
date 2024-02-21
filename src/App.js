@@ -8,15 +8,25 @@ import { useEffect, useState } from 'react';
 import Footer from './components/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import { Loading } from './components/Loading';
 
 function App() {
+  const [loading, setLoading] = useState(true);
   const [toggleMenu, changeMenuState] = useState(false);
+
   useEffect(() => {
     AOS.init({duration: 1000});
+    setTimeout(() => setLoading(false), 4000);
   }, []);
+
   const toggleMenuButton = () => {
     changeMenuState(!toggleMenu);
   };
+
+  if (loading) {
+    return <Loading />;
+  }
+
   return <>
     <header className={styles.header}>
       <Link to="/well-wishes">

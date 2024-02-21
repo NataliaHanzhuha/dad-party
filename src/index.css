@@ -134,9 +134,10 @@ section {
   padding: 0 10px;
 }
 
-section::after {
+section::after,
+#loader-container::after {
   content: '';
-  z-index: 0;
+  z-index: -1;
   position: absolute;
   left: 0;
   width: 100%;
@@ -147,6 +148,27 @@ section::after {
   bottom: 0;
   height: clamp(140px, calc(100vh - 600px), 300px);
   background-position: top center;
+}
+
+#loader-container::before,
+#loader-container::after,
+main {
+  animation-duration: 3s;
+  animation-name: fadeIn;
+}
+
+#loader-container::before {
+  content: '';
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  width: 100%;
+  background-size: contain;
+  background-repeat: repeat no-repeat;
+  filter: brightness(0.7);
+  background-image: url("./images/blinks-top.png");
+  top: 0;
+  height: 40vh;
 }
 
 @media screen and (min-width: 768px) {
@@ -168,3 +190,12 @@ section::after {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+   opacity: 1;
+  }
+}
