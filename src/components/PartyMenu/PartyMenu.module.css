@@ -1,5 +1,9 @@
 .h1 {
   margin: 0;
+  width: 87vw;
+  text-align: center;
+  border-bottom: 1px var(--gold);
+  border-bottom-style: solid;
 }
 
 .section {
@@ -14,9 +18,11 @@
   padding: 20px 10px;
   margin-bottom: 20px;
   z-index: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  grid-auto-rows: minmax(20px, auto);
+  justify-content: center;
+  grid-gap: 40px;
 }
 
 .dishWrapperStyles {
@@ -36,7 +42,10 @@
 
 .typeHeaderStyles {
   text-transform: uppercase;
-  margin: 0
+  margin: 0;
+  border-top: 1px solid var(--gold);
+  width: 100%;
+  text-align: center;
 }
 
 .dishNameStyle {
@@ -45,8 +54,39 @@
   color: var(--gold);
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (max-width: 300px) {
+  .menuWrapper {
+    grid-template-columns: minmax(150px, 1fr);
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .menuWrapper {
     padding: 20px;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+  .menuWrapper {
+    width: 85vw;
+    row-gap: 40px;
+    grid-template-columns: repeat(3, minmax(150px, 1fr));
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 20px 40px;
+    margin: 0;
+  }
+
+  .section {
+    gap: 20px;
+  }
+}
+
+@media only screen and (min-height: 912px) {
+  .menuWrapper {
+    width: 85vw;
+    row-gap: 40px;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-gap: 20px 40px;
   }
 }

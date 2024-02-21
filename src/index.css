@@ -154,3 +154,17 @@ section::after {
     height: 300px;
   }
 }
+
+@media only screen and (min-height: 1024px) {
+  .desserts {
+    grid-column: span 2;
+  }
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+  .desserts {
+    grid-area: 2/3;
+  }
+}
+
