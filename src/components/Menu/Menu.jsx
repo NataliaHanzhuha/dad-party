@@ -1,15 +1,11 @@
 import { Link } from 'react-router-dom';
 import { Modal } from '../../utillits/Modal/Modal';
 import styles from './Menu.module.css';
-import Footer from '../Footer/Footer';
+import Footer from '../../utillits/Footer/Footer';
+import { routesForMenu } from '../../router';
 
 function Menu({toggleMenuHandler}) {
-  const routes = [
-    {path: '/', name: 'Home'},
-    {path: '/biography', name: 'Biography'},
-    {path: '/well-wishes', name: 'Well Wishes'},
-    {path: '/party-menu', name: 'Party Menu'}
-  ];
+  const routes = routesForMenu;
 
   const menu = <>
     <menu className={styles.menu}>

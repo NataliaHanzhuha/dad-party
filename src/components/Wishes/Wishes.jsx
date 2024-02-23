@@ -36,12 +36,6 @@ function Wishes() {
       getMovieList();
     }
   }, [loading, getMovieList]);
-  //
-  // useEffect(() => {
-  //   refreshList();
-  //
-  //   return () => refreshList.cancel();
-  // })
 
   const getSavedUserMessageIds = () => {
     const existListStorage = localStorage[LSKey];
@@ -99,7 +93,7 @@ function Wishes() {
   const formatDate = (date) => {
     const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
     const d = new Date(date);
-    const timeString = d.toUTCString().split(' ')[4];
+    const timeString = d.toUTCString().split(' ')[4].slice(0, -3);
     const dateString = `${months[d.getMonth()]}, ${d.getDate()}`;
     return [dateString, timeString].join(' ');
   };

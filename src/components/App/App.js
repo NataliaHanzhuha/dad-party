@@ -1,14 +1,13 @@
-import './App.css';
 import { Link, Outlet } from 'react-router-dom';
-import styles from './components/Header/Header.module.css';
-import logo from './images/icons/logo.svg';
-import menu from './images/icons/menu.svg';
-import { Menu } from './components/Menu';
+
+import logo from '../../images/icons/logo.svg';
+import menu from '../../images/icons/menu.svg';
+import { Menu } from '../Menu';
 import { useEffect, useState } from 'react';
-import Footer from './components/Footer/Footer';
+import Footer from '../../utillits/Footer/Footer';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import { Loading } from './components/Loading';
+import { Loading } from '../../utillits/Loading';
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -28,7 +27,7 @@ function App() {
   }
 
   return <>
-    <header className={styles.header}>
+    <header className='header'>
       <Link to="/well-wishes">
         <img src={logo}
              width={32}
