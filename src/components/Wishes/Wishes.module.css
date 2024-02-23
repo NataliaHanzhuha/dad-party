@@ -1,7 +1,7 @@
 
 .wishesWrapper {
   gap: 10px;
-  margin-bottom: 100px;
+  margin: 0 0 100px;
 }
 
 .textarea,
@@ -16,7 +16,7 @@
 }
 
 .textarea {
-  height: 300px;
+  height: 250px;
 }
 
 .wishesWrapper label {
@@ -39,11 +39,11 @@
 .wishWrapper {
   display: flex;
   flex-direction: column;
-  /*border: 1px solid var(--gold);*/
-  padding: 5px;
+  padding: 10px;
   border-radius: 10px;
   width: 80%;
-  background: var(--green);
+  background: linear-gradient(300deg, hsla(0, 0%, 50%, .4) 55%, hsla(40, 62%, 65%, .45) 100%);
+  gap: 25px;
 }
 
 .wishWrapper__text {
@@ -59,8 +59,18 @@
 .nameWrapper {
   display: flex;
   gap: 10px;
-  justify-content: flex-end;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--gold);
 }
+
+.name {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--white);
+}
+
 @media screen and (min-width: 768px) {
   .wishesWrapper {
     width: 100%;

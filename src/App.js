@@ -23,9 +23,9 @@ function App() {
     changeMenuState(!toggleMenu);
   };
 
-  if (loading) {
-    return <Loading />;
-  }
+  // if (loading) {
+  //   return <Loading />;
+  // }
 
   return <>
     <header className={styles.header}>

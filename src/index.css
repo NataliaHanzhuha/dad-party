@@ -151,8 +151,9 @@ section::after,
 }
 
 #loader-container::before,
-#loader-container::after,
-main {
+#loader-container::after
+/*main */
+{
   animation-duration: 3s;
   animation-name: fadeIn;
 }

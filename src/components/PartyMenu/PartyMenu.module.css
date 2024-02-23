@@ -43,7 +43,7 @@
 .typeHeaderStyles {
   text-transform: uppercase;
   margin: 0;
-  border-top: 1px solid var(--gold);
+  /*border-top: 1px solid var(--gold);*/
   width: 100%;
   text-align: center;
 }
@@ -72,7 +72,7 @@
     row-gap: 40px;
     grid-template-columns: repeat(3, minmax(150px, 1fr));
     grid-template-rows: repeat(auto-fill, 1fr);
-    grid-gap: 20px 40px;
+    grid-gap: 40px;
     margin: 0;
   }
 

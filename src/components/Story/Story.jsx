@@ -40,7 +40,7 @@ function Story() {
     />
     <p>{fullSizePhoto?.text}</p></div>;
 
-  return <section>
+  return <section className={styles.section}>
     <h1>Biography</h1>
 
     <p className={styles.textSummary}>

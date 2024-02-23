@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import { wishCollectionRef } from '../../firebase';
-import { addDoc, doc, getDocs, updateDoc } from 'firebase/firestore';
+import { addDoc, doc, getDocs, orderBy, query, updateDoc } from 'firebase/firestore';
 import editIcon from '../../images/icons/edit.svg';
 import { Modal } from '../../utillits/Modal/Modal';
 import styles from './Wishes.module.css';
@@ -18,7 +18,8 @@ function Wishes() {
   // const refreshList = debounce(() => getMovieList(), 20 * 1000);
 
   const getMovieList = useCallback(() => {
-      getDocs(wishCollectionRef).then(data => {
+      getDocs(query(wishCollectionRef, orderBy('created', 'desc')))
+        .then(data => {
         const filteredData = data.docs?.map((doc) => ({
           ...doc.data(),
           id: doc.id,
@@ -53,6 +54,7 @@ function Wishes() {
     return {
       text: wish?.trim(),
       name: name?.trim()?.length ? name : 'Anonim',
+      created: Date.now()
     };
   };
 
@@ -94,6 +96,14 @@ function Wishes() {
     setLoading(true);
   };
 
+  const formatDate = (date) => {
+    const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+    const d = new Date(date);
+    const timeString = d.toUTCString().split(' ')[4];
+    const dateString = `${months[d.getMonth()]}, ${d.getDate()}`;
+    return [dateString, timeString].join(' ');
+  };
+
   const formContent = <>
     <label htmlFor="textarea">Your Wishes
       <textarea placeholder="Enter something for birthday guy"
@@ -128,13 +138,18 @@ function Wishes() {
         <p>{wish.text} </p>
 
         <div className={styles.nameWrapper}>
-          <i>{wish.name}</i>
-          {userMessageIds.includes(wish?.id)
-            && <button onClick={() => setEditForm(wish)}>
-              <img src={editIcon}
-                   alt="edit button"
-                   width={18}/>
-            </button>}
+          {!!wish?.created && <span>{formatDate(wish?.created)}</span>}
+
+          <div className={styles.name}>
+            <i>{wish.name}</i>
+            {userMessageIds.includes(wish?.id)
+              && <button onClick={() => setEditForm(wish)}>
+                <img src={editIcon}
+                     alt="edit button"
+                     width={18}/>
+              </button>}
+          </div>
+
         </div>
 
       </div>;
