@@ -5,11 +5,9 @@ import Footer from '../../utillits/Footer/Footer';
 import { routesForMenu } from '../../router';
 
 function Menu({toggleMenuHandler}) {
-  const routes = routesForMenu;
-
   const menu = <>
     <menu className={styles.menu}>
-      {routes.map((route, index) =>
+      {routesForMenu.map((route, index) =>
         <h2 key={index}
             className={styles.menuItem}
             onClick={toggleMenuHandler}>

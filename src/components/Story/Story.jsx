@@ -1,37 +1,11 @@
-import oldManPhoto from '../../images/old-man.jpeg';
 import styles from './Story.module.css';
 
 import { Modal } from '../../utillits/Modal/Modal';
 import { useState } from 'react';
+import { timelineHash } from '../../constants';
 
 function Story() {
   const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
-  const timelineHash = {
-    1951: [{
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    },
-      {
-        image: oldManPhoto,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-      }],
-    1961: [{
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    },
-      {
-        image: oldManPhoto,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-      }],
-    1971: [{
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    },
-      {
-        image: oldManPhoto,
-        text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-      }],
-  };
   const timelineYears = Object.keys(timelineHash);
 
   const fullSizeImage = <div className={styles.fullSizeWrapper}>
@@ -46,9 +20,7 @@ function Story() {
     <p className={styles.textSummary}>
       Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam cumque debitis deserunt distinctio
       facilis, nemo temporibus
-      veritatis. Accusamus eos numquam quibusdam soluta vitae voluptatibus? Aspernatur, nobis, quasi? Dicta eaque
-      iste omnis optio pariatur
-      provident voluptatem! Doloremque facere ipsam odio saepe!</p>
+   </p>
 
     <h2>Timeline</h2>
 
