@@ -1,3 +1,10 @@
+:root {
+  --min-height: -8vh;
+  --max-height: -8vh;
+  --min-scale: .9;
+  --max-scale: 1;
+}
+
 .section {
   justify-content: space-between;
   overflow: hidden;
@@ -16,8 +23,6 @@
   background-image: url("../../images/blinks-top.png");
   top: 19vh;
   height: 250px;
-  /*transform: translateY(-53vh);*/
-  /*background-position: bottom center;*/
 }
 
 .section::after {
@@ -44,13 +49,6 @@
   width: 100%;
   z-index: 1;
 }
-:root {
-  --min-height: -8vh;
-  --max-height: -8vh;
-  --min-scale: .9;
-  --max-scale: 1;
-}
-
 
 @media only screen and (max-height: 670px) {
   .video {
@@ -94,7 +92,7 @@
 
 }
 
-@media screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+@media screen and (min-width: 600px) and (orientation: landscape) {
  .section {
    flex-direction: row;
    align-items: center;
@@ -112,6 +110,7 @@
   .yearImage {
     position: static;
     width: 50%;
+    height: 80vh;
   }
 
   .video {

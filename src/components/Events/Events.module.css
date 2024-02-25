@@ -1,0 +1,34 @@
+.section {
+  margin-bottom: 120px;
+}
+
+.section::after {
+  filter: brightness(0.4);
+}
+.eventsWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  padding: 0 10px;
+}
+
+.eventWrapper {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.eventTime {
+  display: inline-flex;
+  min-width: 65px;
+  width: 65px;
+  padding: 5px 10px;
+  border: 1px solid var(--gold);
+  border-radius: 10px;
+  color: var(--white);
+  text-transform: uppercase;
+}
+
+.eventName {
+  margin: 0;
+}
