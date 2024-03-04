@@ -13,4 +13,7 @@ const firebaseConfig = {
 
 const app = firebase.initializeApp(firebaseConfig);
 export const db = getFirestore(app);
-export const wishCollectionRef = collection(db, process.env.REACT_APP_COLLECTION_NAME);
+export const wishCollectionRef =
+  collection(db, process.env.REACT_APP_COLLECTION_NAME);
+export const emailsCollectionRef =
+  collection(db, process.env.REACT_APP_COLLECTION_NAME_EMAILS);

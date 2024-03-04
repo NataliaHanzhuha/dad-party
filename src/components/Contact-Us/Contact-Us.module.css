@@ -1,0 +1,57 @@
+.section {
+  gap: 40px;
+  max-width: 400px;
+  height: 85vh;
+}
+
+.heading {
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  margin: 0;
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 20px;
+}
+
+label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  /*width: 100%;*/
+  gap: 10px;
+  font-size: 20px;
+  /*padding: 0 10px;*/
+}
+
+.input {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid var(--white);
+  border-radius: 15px;
+  font-size: 18px;
+  padding: 5px;
+}
+
+.greating {
+  color: var(--gold);
+}
+
+@media screen and (min-width: 600px) and (orientation: landscape) {
+  .section {
+    flex-direction: row;
+    gap: 100px;
+    max-width: 800px;
+  }
+  .heading,
+  .contactForm {
+    flex: 1;
+  }
+
+}

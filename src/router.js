@@ -5,13 +5,15 @@ import { Wishes } from './components/Wishes';
 import { PartyMenu } from './components/PartyMenu';
 import { Main } from './components/Main';
 import { Events } from './components/Events';
+import { ContactUs } from './components/Contact-Us';
 
 const routeNames = {
   Main: '/',
   Biography: '/biography',
   'Well Wishes': '/well-wishes',
   'Party Menu': '/party-menu',
-  'Event Program': '/events'
+  'Event Program': '/events',
+  'Contact Us': '/contact-us'
 };
 
 export const routes = [
@@ -19,6 +21,7 @@ export const routes = [
   {path: routeNames['Well Wishes'], element: <Wishes/>},
   {path: routeNames['Party Menu'], element: <PartyMenu/>},
   {path: routeNames['Event Program'], element: <Events/>},
+  {path: routeNames['Contact Us'], element: <ContactUs/>},
   {path: routeNames.Main, element: <Main/>},
 ];
 
