@@ -29,10 +29,7 @@ function Events() {
           </div>
         </div>;
       })}
-
     </div>
-
-    <small>(this is just template)</small>
   </section>
 }
 

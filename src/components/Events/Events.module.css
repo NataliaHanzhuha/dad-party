@@ -16,6 +16,8 @@
   display: flex;
   align-items: center;
   gap: 20px;
+  background: linear-gradient(300deg, hsla(0, 0%, 50%, .4) 55%, hsla(40, 62%, 65%, .45) 100%);
+  border-radius: 10px;
 }
 
 .eventTime {
