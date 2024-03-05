@@ -11,17 +11,17 @@ const routeNames = {
   Main: '/',
   Biography: '/biography',
   'Well Wishes': '/well-wishes',
-  'Party Menu': '/party-menu',
+  // 'Party Menu': '/party-menu',
   'Event Program': '/events',
-  'Contact Us': '/contact-us'
+  'Event Media': '/contact-us'
 };
 
 export const routes = [
   {path: routeNames.Biography, element: <Story/>},
   {path: routeNames['Well Wishes'], element: <Wishes/>},
-  {path: routeNames['Party Menu'], element: <PartyMenu/>},
+  // {path: routeNames['Party Menu'], element: <PartyMenu/>},
   {path: routeNames['Event Program'], element: <Events/>},
-  {path: routeNames['Contact Us'], element: <ContactUs/>},
+  {path: routeNames['Event Media'], element: <ContactUs/>},
   {path: routeNames.Main, element: <Main/>},
 ];
 
