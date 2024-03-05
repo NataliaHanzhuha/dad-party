@@ -2,7 +2,6 @@ import React from 'react';
 
 import { Story } from './components/Story';
 import { Wishes } from './components/Wishes';
-import { PartyMenu } from './components/PartyMenu';
 import { Main } from './components/Main';
 import { Events } from './components/Events';
 import { ContactUs } from './components/Contact-Us';
