@@ -4,6 +4,7 @@ import { addDoc, doc, getDocs, orderBy, query, updateDoc } from 'firebase/firest
 import editIcon from '../../images/icons/edit.svg';
 import { Modal } from '../../utillits/Modal/Modal';
 import styles from './Wishes.module.css';
+import refreshIcon from '../../images/icons/refresh.svg';
 
 function Wishes() {
   const [wishes, setWishes] = useState([]);
@@ -151,7 +152,16 @@ function Wishes() {
   </div>;
 
   return <section className={styles.wishesWrapper}>
-    <h1>Well Wishes</h1>
+    <div className={styles.header}>
+      <h1>Well Wishes</h1>
+      <button className={styles.button}
+              onClick={() => setLoading(true)}>
+        <img src={refreshIcon}
+             alt="refresh icon"
+             width="24"/>
+      </button>
+    </div>
+
     <button className="big-close-btn"
             onClick={() => toggleForm(true)}>Add your wish to list
     </button>

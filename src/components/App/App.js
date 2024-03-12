@@ -5,8 +5,6 @@ import menu from '../../images/icons/menu.svg';
 import { Menu } from '../Menu';
 import { useEffect, useState } from 'react';
 import Footer from '../../utillits/Footer/Footer';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 import { Loading } from '../../utillits/Loading';
 
 function App() {
@@ -14,7 +12,6 @@ function App() {
   const [toggleMenu, changeMenuState] = useState(false);
 
   useEffect(() => {
-    AOS.init({duration: 1000});
     setTimeout(() => setLoading(false), 4000);
   }, []);
 
@@ -22,7 +19,7 @@ function App() {
     changeMenuState(!toggleMenu);
   };
 
-  if (loading) {
+  if (loading && process.env.NODE_ENV === 'production') {
     return <Loading />;
   }
 

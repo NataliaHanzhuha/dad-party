@@ -4,6 +4,13 @@
   margin: 0 0 100px;
 }
 
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
 .textarea,
 .input {
   background: transparent;
@@ -44,6 +51,12 @@
   width: 80%;
   background: linear-gradient(300deg, hsla(0, 0%, 50%, .4) 55%, hsla(40, 62%, 65%, .45) 100%);
   gap: 25px;
+}
+
+.button {
+  background: transparent;
+  padding: 5px;
+  display: flex;
 }
 
 .wishWrapper__text {

@@ -19,7 +19,7 @@ export function ContactUs() {
 
   return <section className={styles.section}>
     <div className={styles.heading}>
-      <h2>Contact us</h2>
+      <h2>Event Media</h2>
       <p className={styles.description}>
         Please leave us your email and name so we can send you a link to the event pictures and video
         highlights as soon as they are ready

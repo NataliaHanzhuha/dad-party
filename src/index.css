@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
 :root {
   --gold: #ddb86d;
   --black: #000000;
@@ -23,6 +22,8 @@ body {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
@@ -223,4 +224,8 @@ section::after,
   to {
    opacity: 1;
   }
+}
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
 }

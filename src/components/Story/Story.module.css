@@ -11,6 +11,7 @@
   backdrop-filter: contrast(0.65);
   border-radius: 30px;
   padding: 20px 10px;
+  overflow: hidden;
 }
 
 .yearWrapper {
@@ -62,6 +63,7 @@
   gap: 20px;
   padding: 10px;
   justify-content: center;
+  height: 98vh;
 }
 
 .fullSizeWrapper img {
@@ -86,4 +88,81 @@
   left: 50%;
   height: calc(100% - 0px);
   border-left: 2px solid var(--gold);
+}
+
+@media screen and (max-width: 375px) and (orientation: portrait) {
+  .line {
+    display: none;
+  }
+
+  .itemWrapper,
+  .itemWrapper:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .image {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .timelineWrapper {
+    margin: 5vw;
+  }
+
+  .itemWrapper {
+    gap: 50px;
+  }
+
+  .year {
+    font-size: 50px;
+    padding: 5px 15px;
+  }
+
+  .text, .textSummary, .fullSizeWrapper p {
+    font-size: 32px;
+  }
+
+  .header {
+    font-size: 50px;
+  }
+
+  .fullSizeWrapper img {
+    max-height: 90vh;
+
+    @media screen and (orientation: landscape) {
+      max-height: 70vh;
+    }
+  }
+
+  .fullSizeWrapper p {
+    text-align: center;
+  }
+}
+
+
+@media only screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+  .fullSizeWrapper {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .year {
+    margin-left: 50%;
+  }
+}
+
+@media only screen and (min-height: 1024px) and (orientation: portrait) {
+  .fullSizeWrapper {
+    justify-content: start;
+  }
+
+  .fullSizeWrapper img {
+    max-height: 42vh;
+  }
+
+  .fullSizeWrapper p {
+    text-align: center;
+    font-size: 32px;
+  }
 }
