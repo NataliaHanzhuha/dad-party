@@ -6,6 +6,13 @@
 
 .heading {
   text-align: center;
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+}
+
+.heading h2 {
+  margin: 0;
 }
 
 .description {
@@ -34,7 +41,7 @@ label {
   background: transparent;
   color: var(--white);
   border: 1px solid var(--white);
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 18px;
   padding: 5px;
 }
@@ -45,10 +52,14 @@ label {
   max-width: 300px;
 }
 
+.section button {
+  margin: 0;
+}
+
 @media screen and (min-width: 600px) and (orientation: landscape) {
   .section {
     flex-direction: row;
-    gap: 100px;
+    gap: 60px;
     max-width: 800px;
   }
   .heading,
@@ -56,4 +67,38 @@ label {
     flex: 1;
   }
 
+}
+
+@media screen and (min-width: 768px) {
+
+  .contactForm {
+    gap: 30px;
+  }
+
+  .section {
+    max-width: 80vw;
+  }
+  .heading {
+    font-size: 42px;
+  }
+
+  .description , label {
+    font-size: 28px;
+  }
+
+  .input, .section button {
+    font-size: 32px;
+  }
+
+  .greating {
+    max-width: 35vw;
+    font-size: 32px;
+    width: 50%;
+  }
+}
+
+@media only screen and (min-height: 912px) {
+  .greating {
+    max-width: 50vw;
+  }
 }

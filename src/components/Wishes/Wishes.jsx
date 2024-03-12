@@ -101,7 +101,7 @@ function Wishes() {
 
   const formContent = <>
     <label htmlFor="textarea">Your Wishes
-      <textarea placeholder="Enter something for birthday guy"
+      <textarea placeholder="Enter something for birthday boy"
                 value={wish}
                 className={styles.textarea}
                 autoFocus={true}
@@ -123,7 +123,7 @@ function Wishes() {
   </>;
 
   const form = <Modal closeModal={closeModal}
-                      header="Add your wish to list"
+                      header={isEditing ? 'Edit your wish' : 'Add your wish'}
                       content={formContent}></Modal>;
 
   const wishList = <div className={styles.wishList}>

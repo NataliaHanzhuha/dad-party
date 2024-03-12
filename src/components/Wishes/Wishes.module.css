@@ -1,7 +1,10 @@
-
 .wishesWrapper {
-  gap: 10px;
-  margin: 0 0 100px;
+  gap: 20px;
+  justify-items: start;
+}
+
+.wishesWrapper h1 {
+  margin: 0;
 }
 
 .header {
@@ -16,7 +19,7 @@
   background: transparent;
   color: var(--white);
   border: 1px solid var(--white);
-  border-radius: 15px;
+  border-radius: 10px;
   font-size: 18px;
   padding: 5px;
   /*margin: 0 10px;*/
@@ -50,7 +53,7 @@
   border-radius: 10px;
   width: 80%;
   background: linear-gradient(300deg, hsla(0, 0%, 50%, .4) 55%, hsla(40, 62%, 65%, .45) 100%);
-  gap: 25px;
+  gap: 10px;
 }
 
 .button {
@@ -88,7 +91,13 @@
   .wishesWrapper {
     width: 100%;
     max-width: 800px;
-    margin: auto auto 300px;
+    font-size: 24px;
+    gap: 30px;
+    /*margin: auto auto 300px;*/
+  }
+
+  .wishesWrapper > button {
+    font-size: 28px;
   }
 }
 
