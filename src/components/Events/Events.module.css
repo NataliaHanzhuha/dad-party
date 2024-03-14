@@ -23,7 +23,7 @@
 .eventTime {
   display: inline-flex;
   min-width: 65px;
-  width: 65px;
+  width: 77px;
   padding: 5px 10px;
   border: 1px solid var(--gold);
   border-radius: 10px;
@@ -33,4 +33,5 @@
 
 .eventName {
   margin: 0;
+  padding-right: 15px;
 }
