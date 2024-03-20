@@ -34,37 +34,29 @@ export const timelineHash = {
 };
 
 export const menuHash = {
-  'starters': [
-    {name: 'Cat Fish Pepper soup', description: 'with bread rolls'},
-    {name: 'Goat Meat Pepper soup', description: 'with bread rolls'},
-    {name: 'Spring Rolls'},
-    {name: 'Samosa and Puff Puff', description: '(a fried South Asian pastry with filling and mini donates)'},
-    {name: 'Chicken Wings'},
+  'Appetizer': [
+    {name: 'Puff Puff',},
+    {name: 'Chicken Spring Rolls'},
   ],
-  'main course': [
-    {name: 'Chinese Fried Rice', description: 'with mongolian beef sauce'},
-    {name: 'Singapore Noodles', description: 'with beef and broccoli sauce'},
-    {name: 'Offada Rice', description: 'with ayamase'},
-    {name: 'Efo Riro', description: 'with pounded yam'},
-    {name: 'Ogbono', description: 'with plantain flour'},
-    {name: 'Party Jollof Rice'},
-    {name: 'Avocado Salad'},
+  'Starter': [
+    {name: 'Bredrolls and Butter',},
   ],
-  'sides': [
-    {name: 'Moin Moin', description: '(steamed bean cakes)'},
-    {name: 'Coleslaw'},
-    {name: 'Plaintain'},
-    {name: 'Roasted Potato'},
-    {name: 'Sauteed Spinach'},
+  'Main': [
+    {name: 'Jollof Rice'},
+    {name: 'Offada Rice and Meat Sauce'},
+    {name: 'Yam Porridge'},
+    {name: 'Efo Riro (Vegetable sauce)'},
+    {name: 'Plaintain (Fried banana)'},
+    {name: 'Moimoi (steamed bean cakes)'},
+    {name: 'Peppered Chicken'},
+    {name: 'Peppered Fish'},
+    {name: 'Peppered Beff'},
+    {name: 'Amala on the spot'},
   ],
-  'proteins': [
-    {name: 'Gizzard', description: '(bird\'s stomach)'},
-    {name: 'Chicken'},
-    {name: 'Fish'},
-    {name: 'Goat Meat'},
+  'Desserts': [
+    {name: 'Cake with cream topping'},
   ],
-  'desserts': [
-    {name: 'Parfait'},
-    {name: 'Fruit Salad'}
+  'Late Night Food': [
+    {name: 'Goatmeat Peppersoup'},
   ],
 };

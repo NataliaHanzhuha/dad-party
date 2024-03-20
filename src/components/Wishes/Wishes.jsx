@@ -21,14 +21,14 @@ function Wishes() {
   const getMovieList = useCallback(() => {
       getDocs(query(wishCollectionRef, orderBy('created', 'desc')))
         .then(data => {
-        const filteredData = data.docs?.map((doc) => ({
-          ...doc.data(),
-          id: doc.id,
-        }));
-        setWishes(filteredData);
-        setLoading(false);
-        getSavedUserMessageIds();
-      });
+          const filteredData = data.docs?.map((doc) => ({
+            ...doc.data(),
+            id: doc.id,
+          }));
+          setWishes(filteredData);
+          setLoading(false);
+          getSavedUserMessageIds();
+        });
     }, []
   );
 
@@ -151,28 +151,34 @@ function Wishes() {
     })}
   </div>;
 
-  return <section className={styles.wishesWrapper}>
-    <div className={styles.header}>
-      <h1>Well Wishes</h1>
-      <button className={styles.button}
-              onClick={() => setLoading(true)}>
-        <img src={refreshIcon}
-             alt="refresh icon"
-             width="24"/>
-      </button>
-    </div>
+  return <>
+    <h1 className={'hh large-label'}>W e l l    W i s h e s</h1>
+    <section className={styles.wishesWrapper}>
+      <div className={styles.header}>
+        <button className="big-close-btn"
+                onClick={() => toggleForm(true)}>Add your wish to list
+        </button>
 
-    <button className="big-close-btn"
-            onClick={() => toggleForm(true)}>Add your wish to list
-    </button>
-    {showForm && form}
+        <button className="big-close-btn"
+                onClick={() => setLoading(true)}>
+          Refresh List
+          <img src={refreshIcon}
+               alt="refresh icon"
+               width="24"/>
+        </button>
+      </div>
 
-    {loading
-      ? 'Loading...'
-      : wishes?.length ? wishList : <div>You can leave your wish first!!!</div>
-    }
 
-  </section>;
+      {showForm && form}
+
+      {loading
+        ? 'Loading...'
+        : wishes?.length ? wishList : <div>You can leave your wish first!!!</div>
+      }
+
+    </section>
+
+  </>;
 }
 
 export default Wishes;

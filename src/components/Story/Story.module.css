@@ -1,5 +1,7 @@
 .section {
   margin-bottom: 100px;
+  padding-left: 10vw;
+  width: calc(100% - 10vw);
 }
 
 .timelineWrapper {
@@ -8,7 +10,7 @@
   gap: 40px;
   align-items: center;
   justify-content: center;
-  backdrop-filter: contrast(0.65);
+  /*backdrop-filter: contrast(0.65);*/
   border-radius: 30px;
   padding: 20px 10px;
   overflow: hidden;

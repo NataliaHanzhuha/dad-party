@@ -4,25 +4,27 @@
   text-align: center;
   border-bottom: 1px var(--gold);
   border-bottom-style: solid;
+  font-family: "Didact Gothic", sans-serif;
 }
 
-.section {
-  gap: 40px;
-  margin-bottom: 40px;
+.section::after {
+  filter: brightness(0.4);
 }
 
 .menuWrapper {
-  -webkit-backdrop-filter: contrast(.65);
-  backdrop-filter: contrast(0.65);
+  /* -webkit-backdrop-filter: contrast(.65);
+  backdrop-filter: contrast(0.65); */
   border-radius: 30px;
   padding: 20px 10px;
-  margin-bottom: 20px;
+  margin-bottom: 150px;
   z-index: 1;
-  display: grid;
+  display: flex;
+  flex-direction: column;
+  /* display: grid;
   grid-template-columns: repeat(auto-fill, 300px);
   grid-auto-rows: minmax(20px, auto);
   justify-content: center;
-  grid-gap: 40px;
+  grid-gap: 40px; */
 }
 
 .dishWrapperStyles {
@@ -41,52 +43,35 @@
 }
 
 .typeHeaderStyles {
-  text-transform: uppercase;
+  text-transform: capitalize;
+  font-family: "Didact Gothic", sans-serif;
   margin: 0;
   /*border-top: 1px solid var(--gold);*/
   width: 100%;
   text-align: center;
+  font-weight: 900;
 }
 
 .dishNameStyle {
   text-transform: uppercase;
+  font-family: "Didact Gothic", sans-serif;
+
   margin: 0;
-  color: var(--gold);
+  color: var(--white);
+  font-weight: 500;
 }
 
-@media only screen and (max-width: 300px) {
-  .menuWrapper {
-    grid-template-columns: minmax(150px, 1fr);
-  }
+.yearImage {
+  width: 50vw;
+  transform: translateY(-35px);
 }
 
-@media only screen and (min-width: 768px) {
-  .menuWrapper {
-    padding: 20px;
-  }
-}
-
-@media only screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
-  .menuWrapper {
-    width: 85vw;
-    row-gap: 40px;
-    grid-template-columns: repeat(3, minmax(150px, 1fr));
-    grid-template-rows: repeat(auto-fill, 1fr);
-    grid-gap: 40px;
-    margin: 0;
+@media only screen and (min-width: 800px) {
+  .dishNameStyle {
+    font-size: 32px;
   }
 
-  .section {
-    gap: 20px;
-  }
-}
-
-@media only screen and (min-height: 912px) {
-  .menuWrapper {
-    width: 85vw;
-    row-gap: 40px;
-    grid-template-columns: repeat(auto-fill, minmax(150px, 300px));
-    grid-template-rows: repeat(auto-fill, 1fr);
-    grid-gap: 20px 40px;
+  .typeHeaderStyles {
+    font-size: 40px;
   }
 }
