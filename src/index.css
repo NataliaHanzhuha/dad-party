@@ -251,7 +251,7 @@ section::after,
   color: gray;
   font-weight: bolder;
   position: fixed;
-  transform: rotate(270deg) translateX(-7ch) translateY(-44.5vw);
+  transform: rotate(270deg) translateX(-7ch) translateY(-46vw);
   top: 0;
   text-transform: uppercase;
   opacity: .7;
@@ -275,31 +275,6 @@ section::after,
   @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: portrait) {
     font-size: 9vh;
     transform: rotate(270deg) translateX(-7ch) translateY(-46.5vw);
-  }
-}
-
-.hh.large-label {
-  font-size: 9vh;
-  transform: rotate(270deg) translateX(-8ch) translateY(-46vw);
-
-  @media screen and (orientation: landscape) {
-    font-size: 10vh;
-    transform: rotate(270deg) translateX(-7ch) translateY(-47vw);
-  }
-
-  @media only screen and (max-width: 300px) {
-    font-size: 9vh;
-  }
-
-  /*IPhone XR*/
-  @media only screen and (min-height: 896px) {
-    font-size: 5vh;
-  }
-
-  /*tablets*/
-  @media only screen and (min-width: 767px) and (max-width: 1024px) and (orientation: portrait) {
-    font-size: 7vh;
-    transform: rotate(270deg) translateX(-10ch) translateY(-47vw);
   }
 }
 
