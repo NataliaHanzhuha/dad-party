@@ -151,20 +151,18 @@ function Wishes() {
     })}
   </div>;
 
-  return <>
-    <h1 className={'hh large-label'}>W i s h e s</h1>
-    <section className={styles.wishesWrapper}>
+  return <section className={styles.wishesWrapper}>
       <div className={styles.header}>
         <button className="big-close-btn"
-                onClick={() => toggleForm(true)}>Add your Wish
+                onClick={() => toggleForm(true)}>Add a Wish
         </button>
 
         <button className="big-close-btn"
                 onClick={() => setLoading(true)}>
           Refresh List
-          <img src={refreshIcon}
-               alt="refresh icon"
-               width="24"/>
+          {/*<img src={refreshIcon}*/}
+          {/*     alt="refresh icon"*/}
+          {/*     width="24"/>*/}
         </button>
       </div>
 
@@ -176,9 +174,7 @@ function Wishes() {
         : wishes?.length ? wishList : <div>You can leave your wish first!!!</div>
       }
 
-    </section>
-
-  </>;
+    </section>;
 }
 
 export default Wishes;

@@ -13,9 +13,7 @@ function Story() {
     />
     <p>{fullSizePhoto?.text}</p></div>;
 
-  return <>
-    <h1 className={'hh large-label'}>B i o g r a p h y</h1>
-    <section className={styles.section}>
+  return <section className={styles.section}>
       {/*<h1 className={styles.header}>Biography</h1>*/}
 
       <iframe width="100%"
@@ -57,8 +55,7 @@ function Story() {
     </section>
     {fullSizePhoto && <Modal closeModal={() => toggleFullSizePhoto(null)}
                              header="Photo"
-                             content={fullSizeImage}></Modal>}
-  </>;
+                             content={fullSizeImage}></Modal>};
 }
 
 export default Story;

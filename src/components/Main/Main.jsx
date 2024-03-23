@@ -7,7 +7,7 @@ import { useState } from 'react';
 function Main() {
   const [loading, setLoadCount] = useState(true);
 
-  return <section className={styles.section}>
+  return <section className={'main ' + styles.section}>
     {loading && <img src={preview}
                      width="100%"
                      height="216px"

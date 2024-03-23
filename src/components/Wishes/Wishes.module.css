@@ -1,6 +1,7 @@
 .wishesWrapper {
   gap: 20px;
   justify-items: start;
+  overflow: hidden;
 }
 
 .wishesWrapper h1 {
@@ -45,6 +46,9 @@
   gap: 20px;
   width: calc(100% - 10vw);
   padding-left: 10vw;
+  height: 100%;
+  overflow: auto;
+  padding-bottom: 100px;
 }
 
 .wishWrapper {
@@ -55,6 +59,10 @@
   width: 80%;
   background: linear-gradient(300deg, hsla(0, 0%, 50%, .4) 55%, hsla(40, 62%, 65%, .45) 100%);
   gap: 10px;
+}
+
+.wishesWrapper p {
+  margin: 0;
 }
 
 .button {

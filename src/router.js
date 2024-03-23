@@ -7,21 +7,21 @@ import { Events } from './components/Events';
 import { ContactUs } from './components/Contact-Us';
 import {PartyMenu} from './components/PartyMenu';
 
-const routeNames = {
+export const routeNames = {
   Main: '/',
   Biography: '/biography',
-  'Well Wishes': '/well-wishes',
-  'Party Menu': '/party-menu',
-  'Event Program': '/events',
-  'Event Media': '/contact-us'
+  Wishes: '/well-wishes',
+  Menu: '/party-menu',
+  Program: '/events',
+  Media: '/contact-us'
 };
 
 export const routes = [
   {path: routeNames.Biography, element: <Story/>},
-  {path: routeNames['Well Wishes'], element: <Wishes/>},
-  {path: routeNames['Party Menu'], element: <PartyMenu/>},
-  {path: routeNames['Event Program'], element: <Events/>},
-  {path: routeNames['Event Media'], element: <ContactUs/>},
+  {path: routeNames.Wishes, element: <Wishes/>},
+  {path: routeNames.Menu, element: <PartyMenu/>},
+  {path: routeNames.Program, element: <Events/>},
+  {path: routeNames.Media, element: <ContactUs/>},
   {path: routeNames.Main, element: <Main/>},
 ];
 

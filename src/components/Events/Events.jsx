@@ -21,22 +21,14 @@ function Events() {
     {time: '-', events: [{name: 'Dance Dance Dance'}]},
   ];
 
-  return <>
-    <h1 className={"hh"}>P r o g r a m</h1>
-  <section className={styles.section}>
+  return<section className={styles.section}>
 
     <div className={styles.eventsWrapper}>
       {eventHash.map((event) => {
-        return <div className={styles.eventWrapper}>
-          {/* <span className={styles.eventTime}>{event.time}</span> */}
-          {/* <div> */}
-            {event.events.map((e) => <p className={styles.eventName}>{e.name}</p>)}
-          {/* </div> */}
-        </div>;
+        return event.events.map((e) => <p className={styles.eventName}>{e.name}</p>);
       })}
     </div>
   </section>
-  </>
 
 }
 

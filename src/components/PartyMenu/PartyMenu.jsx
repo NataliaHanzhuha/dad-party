@@ -12,9 +12,7 @@ function PartyMenu() {
 
   const menuHeaders = Object.keys(menuHash);
 
-  return <>
-    <h1 className={'hh'}>M e n u</h1>
-    <section className={styles.section}>
+  return <section className={styles.section}>
       {/* <h1 className={styles.h1}>Party Menu</h1> */}
       {/* <img src={yearsCard}
          className={styles.yearImage}
@@ -36,8 +34,7 @@ function PartyMenu() {
           </div>;
         })}
       </div>
-    </section>
-  </>;
+    </section>;
 }
 
 export default PartyMenu;

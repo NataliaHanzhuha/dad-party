@@ -1,6 +1,6 @@
 .text {
   color: gray;
-  margin: 10px;
+  margin: 10px 0;
   padding: 0;
   display: inline-flex;
   gap: 5px;
