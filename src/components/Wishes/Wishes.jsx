@@ -4,7 +4,7 @@ import { addDoc, doc, getDocs, orderBy, query, updateDoc } from 'firebase/firest
 import editIcon from '../../images/icons/edit.svg';
 import { Modal } from '../../utillits/Modal/Modal';
 import styles from './Wishes.module.css';
-import refreshIcon from '../../images/icons/refresh.svg';
+// import refreshIcon from '../../images/icons/refresh.svg';
 
 function Wishes() {
   const [wishes, setWishes] = useState([]);
