@@ -80,7 +80,7 @@
     align-items: flex-end;
     padding: 0;
     margin: 0;
-    justify-content: end;
+    justify-content: flex-end;
     gap: 20px;
   }
 }
