@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Jost&family=Didact+Gothic&display=swap');
+@import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
 
 :root {
   --gold: #ddb86d;

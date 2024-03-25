@@ -1,12 +1,13 @@
 import chart from '../../images/chart.png';
 import seats from '../../images/seats.png';
+import InnerImageZoom from 'react-inner-image-zoom';
 
 function Seats() {
 
     return <section>
-        <img src={seats} alt="seats" width="100%"/>
+        <InnerImageZoom src={seats} alt="seats" width="100%" zoomScale={'.15'} zoomType='hover'/>
 
-        <img src={chart} alt="chart" width="100%"/>
+        <InnerImageZoom src={chart}  alt="chart" width="100%" zoomScale={'.15'} zoomType='hover'/>
     </section>
 }
 
