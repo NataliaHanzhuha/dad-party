@@ -14,7 +14,7 @@ function Image({src, alt}) {
     }, []);
 
     return <QuickPinchZoom onUpdate={onUpdate}>
-                <img ref={imgRef} src={src} alt={alt}  width="100%"/>
+                <img ref={imgRef} src={src} alt={alt}  width="100%" hideCloseButton={true} className="zoom-image"/>
             </QuickPinchZoom>
 }
 
