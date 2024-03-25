@@ -15,7 +15,8 @@ export const routeNames = {
   Wishes: '/well-wishes',
   Menu: '/party-menu',
   Program: '/events',
-  Media: '/contact-us'
+  Media: '/contact-us',
+  Seats: '/seats',
 };
 function App() {
   const [loading, setLoading] = useState(true);
@@ -27,7 +28,7 @@ function App() {
     // runs on location, i.e. route, change
     console.log('handle route change here', location)
 
-    if (location?.pathname?.length === 1) {
+    if (location?.pathname?.length === 1 || location.pathname === '/seats') {
       setLabel(null)
     } else {
       setLabel(getKeyByValue(location?.pathname))
