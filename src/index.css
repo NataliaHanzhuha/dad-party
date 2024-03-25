@@ -284,3 +284,8 @@ section::after,
     display: none;
   }
 }
+
+.kvfysmfp {
+  overflow: hidden;
+  touch-action: auto;
+}
