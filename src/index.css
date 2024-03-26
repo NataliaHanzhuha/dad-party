@@ -288,22 +288,18 @@ section::after,
 .kvfysmfp {
   overflow: hidden;
   touch-action: auto !important;
+  overflow-y: scroll !important;
 }
 
 .zoom-image {
-  width: 100%;
-}
-.fullSizeWrapper {
+  max-height: 40vh;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 10px;
-  justify-content: center;
-  height: 98vh;
 }
 
-.fullSizeWrapper img {
-  width: 100%;
-  max-height: 400px;
-  object-fit: cover;
+
+.seats {
+    overflow-y: scroll;
+    width: 100%;
+    display: block;
+    margin-bottom: 100px;
 }
