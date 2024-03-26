@@ -287,5 +287,23 @@ section::after,
 
 .kvfysmfp {
   overflow: hidden;
-  touch-action: auto;
+  touch-action: auto !important;
+}
+
+.zoom-image {
+  width: 100%;
+}
+.fullSizeWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 10px;
+  justify-content: center;
+  height: 98vh;
+}
+
+.fullSizeWrapper img {
+  width: 100%;
+  max-height: 400px;
+  object-fit: cover;
 }
