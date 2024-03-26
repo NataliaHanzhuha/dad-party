@@ -298,13 +298,17 @@ section::after,
   max-height: 100%;
   display: block;
   object-fit: cover;
-  touch-action: auto;
-  pointer-events: auto;
 }
 
 @media only screen and (min-width: 1024px) {
   .seats {
     flex-direction: row;
     align-items: center;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .seats img {
+    width: 50%;
   }
 }
