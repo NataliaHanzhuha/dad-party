@@ -2,11 +2,67 @@ import styles from './Story.module.css';
 
 import { Modal } from '../../utillits/Modal/Modal';
 import { useState } from 'react';
-import { timelineHash } from '../../constants';
+import { imageLink } from '../../firebase';
+
+function getUrl(name) {
+  return imageLink('biography', name, process.env.REACT_APP_B_IMAGE_TOKEN);
+}
+
+const timelineHash = {
+  1951: [
+    {
+      image: getUrl('old-man.jpeg'),
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
+    },
+    {
+      image: getUrl('old-man.jpeg'),
+      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
+    }
+  ],
+  // 1961: [
+  //   {
+  //     image: null,
+  //     imageData: {
+  //       folder: 'biography',
+  //       name: 'old-man.jpeg'
+  //     },
+  //     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
+  //   },
+  //   {
+  //     image: null,
+  //     imageData: {
+  //       folder: 'biography',
+  //       name: 'old-man.jpeg'
+  //     },
+  //     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
+  //   }
+  // ],
+  // 1971: [
+  //   {
+  //     image: null,
+  //     imageData: {
+  //       folder: 'biography',
+  //       name: 'old-man.jpeg'
+  //     },
+  //     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
+  //   },
+  //   {
+  //     image: null,
+  //     imageData: {
+  //       folder: 'biography',
+  //       name: 'old-man.jpeg'
+  //     },
+  //     text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
+  //   }
+  // ],
+};
+
+// const timelineHash =
 
 function Story() {
   const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
   const timelineYears = Object.keys(timelineHash);
+
   const fullSizeImage = <div className={styles.fullSizeWrapper}>
     <img src={fullSizePhoto?.image}
          alt={fullSizePhoto?.text}
@@ -14,9 +70,7 @@ function Story() {
     <p>{fullSizePhoto?.text}</p></div>;
 
   return <>
-  <section className={styles.section}>
-      {/*<h1 className={styles.header}>Biography</h1>*/}
-
+    <section className={styles.section}>
       <iframe width="100%"
               height="315"
               src="https://www.youtube.com/embed/kriaFd5Sggk?si=GQ7Yp45L2RR0QNYP"
@@ -42,6 +96,7 @@ function Story() {
                             key={index}>
                   <img src={item?.image}
                        alt={item?.text}
+                       loading="lazy"
                        className={styles.image}
                        width="46%"
                        onClick={() => toggleFullSizePhoto(item)}/>
@@ -57,7 +112,7 @@ function Story() {
     {fullSizePhoto && <Modal closeModal={() => toggleFullSizePhoto(null)}
                              header="Photo"
                              content={fullSizeImage}></Modal>}
-                             </>;
+  </>;
 }
 
 export default Story;

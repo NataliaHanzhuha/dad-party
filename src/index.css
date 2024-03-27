@@ -300,6 +300,11 @@ section::after,
   object-fit: cover;
 }
 
+.kvfysmfp {
+  max-height: 95vh;
+  display: flex;
+}
+
 @media only screen and (min-width: 1024px) {
   .seats {
     flex-direction: row;
