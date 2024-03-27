@@ -2,17 +2,13 @@ import Image from '../../utillits/Image/Image';
 import { Modal } from '../../utillits/Modal/Modal';
 import { useEffect, useState } from 'react';
 import { imageLink } from '../../firebase';
+import useScreenSize from '../../utillits/useScreenSize';
 
 function Seats() {
   const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
   const [urls, setUrls] = useState([]);
   const [loaded, setLoaded] = useState(false);
-  const onLoad = () => {
-    setLoaded(true);
-  }
-
-  const fullSizeImage = <Image src={fullSizePhoto}
-                               alt="seats"/>;
+  const screenSize = useScreenSize();
 
   useEffect(() => {
     const folder = 'seats';
@@ -20,20 +16,27 @@ function Seats() {
     setUrls(images.map((name) => imageLink(folder, name)));
   }, []);
 
+  const toggleModal = (url) => {
+    if (screenSize?.width < 900) {
+      toggleFullSizePhoto(url)
+    }
+  }
+
   return <>
     <section className="main seats">
       {!loaded && 'Loading...' }
       {urls.map((url) =>
         <img src={url}
              key={url}
-             onLoad={onLoad}
+             onLoad={() =>  setLoaded(true)}
              alt="chart"
-             onClick={() => toggleFullSizePhoto(url)}/>
+             onClick={() => toggleModal(url)}/>
       )}
     </section>
     {fullSizePhoto && <Modal closeModal={() => toggleFullSizePhoto(null)}
                              header="Photo"
-                             content={fullSizeImage}></Modal>}
+                             content={ <Image src={fullSizePhoto}
+                                              alt="seats"/>}></Modal>}
   </>;
 }
 

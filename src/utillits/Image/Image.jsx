@@ -1,10 +1,8 @@
 import { Fragment } from 'react';
-// import QuickPinchZoom, { make3dTransformValue } from 'react-quick-pinch-zoom';
 import { TransformComponent, TransformWrapper } from 'react-zoom-pan-pinch';
 
 function Image({src, alt}) {
-  return <TransformWrapper>
-    {({zoomIn, zoomOut, resetTransform, ...rest}) => (
+  return <TransformWrapper minScale={1} maxScale={5} initialScale={1} smooth={true}>
       <Fragment>
         <TransformComponent>
           <img src={src}
@@ -12,7 +10,6 @@ function Image({src, alt}) {
                width={'100%'}/>
         </TransformComponent>
       </Fragment>
-    )}
   </TransformWrapper>;
   // const imgRef = useRef();
   // const onUpdate = useCallback(({x, y, scale}) => {
@@ -23,7 +20,7 @@ function Image({src, alt}) {
   //     img.style.setProperty('transform', value);
   //   }
   // }, []);
-
+  //
   // return <QuickPinchZoom onUpdate={onUpdate}
   //                        tapZoomFactor={2}
   //                        initialScale={1}

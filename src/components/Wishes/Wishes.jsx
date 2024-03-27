@@ -4,7 +4,6 @@ import { addDoc, doc, getDocs, orderBy, query, updateDoc } from 'firebase/firest
 import editIcon from '../../images/icons/edit.svg';
 import { Modal } from '../../utillits/Modal/Modal';
 import styles from './Wishes.module.css';
-// import refreshIcon from '../../images/icons/refresh.svg';
 
 function Wishes() {
   const [wishes, setWishes] = useState([]);
@@ -15,8 +14,6 @@ function Wishes() {
   const [showForm, toggleForm] = useState(false);
   const LSKey = 'wish-ids-list';
   const [userMessageIds, setUserMessages] = useState([]);
-
-  // const refreshList = debounce(() => getMovieList(), 20 * 1000);
 
   const getMovieList = useCallback(() => {
       getDocs(query(wishCollectionRef, orderBy('created', 'desc')))
@@ -160,9 +157,6 @@ function Wishes() {
         <button className="big-close-btn"
                 onClick={() => setLoading(true)}>
           Refresh List
-          {/*<img src={refreshIcon}*/}
-          {/*     alt="refresh icon"*/}
-          {/*     width="24"/>*/}
         </button>
       </div>
 
