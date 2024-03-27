@@ -9,7 +9,7 @@ function Seats() {
   const [urls, setUrls] = useState([]);
   const [loaded, setLoaded] = useState(false);
   const screenSize = useScreenSize();
-
+  const isMobileScreen = screenSize?.width < 900;
   useEffect(() => {
     const folder = 'seats';
     const images = ['Untitled-11.png', 'Untitled-10.png'];
@@ -17,26 +17,27 @@ function Seats() {
   }, []);
 
   const toggleModal = (url) => {
-    if (screenSize?.width < 900) {
-      toggleFullSizePhoto(url)
+    if (isMobileScreen) {
+      toggleFullSizePhoto(url);
     }
-  }
+  };
 
   return <>
     <section className="main seats">
-      {!loaded && 'Loading...' }
+      {!loaded && <p>Loading...</p>}
+      {isMobileScreen && loaded && <p className={'tip'}>Click on image for maximizing and zooming...</p>}
       {urls.map((url) =>
         <img src={url}
              key={url}
-             onLoad={() =>  setLoaded(true)}
+             onLoad={() => setLoaded(true)}
              alt="chart"
              onClick={() => toggleModal(url)}/>
       )}
     </section>
     {fullSizePhoto && <Modal closeModal={() => toggleFullSizePhoto(null)}
                              header="Photo"
-                             content={ <Image src={fullSizePhoto}
-                                              alt="seats"/>}></Modal>}
+                             content={<Image src={fullSizePhoto}
+                                             alt="seats"/>}></Modal>}
   </>;
 }
 
