@@ -592,46 +592,64 @@ export const biography = () => {
 
 
   return timelineHash;
-}
+};
 
 function getUrl(name) {
   return imageLink('biography', name, process.env.REACT_APP_B_IMAGE_TOKEN);
 }
 
 export const biographyImages = {
-  '1954': [getUrl('old-man.jpeg',), getUrl('old-man.jpeg',), getUrl('old-man.jpeg',)],
+  '1954': [],
   '1959': [],
-  '1964-65': [],
+  '1964-65': [getUrl('IMG-20240305-WA0108.remini-enhanced.jpg')],
   '1966': [],
-  '1967-68': [getUrl('old-man.jpeg')],
-  '1971-72': [],
+  '1967-68': [],
+  '1971-72': [getUrl('IMG-20240305-WA0058 (1).remini-enhanced.jpg')],
   '1973': [],
   '1974': [],
   '1975': [],
   '1976': [],
-  '1979': [],
+  '1979': [getUrl('snip 2.remini-enhanced (1).jpg')],
   '1980': [],
   '1980-92': [],
   '1992': [],
   '1993': [],
-  '1993-04': [],
+  '1993-04': [getUrl('image.remini-enhanced (1).jpg')],
   '1998': [],
   '2001': [],
-  '2002-04': [],
+  '2002-04': [getUrl('IMG-20240305-WA0068.jpg'), getUrl('IMG-20240305-WA0096.jpg')],
   '2004': [],
-  '2005': [],
+  '2005': [getUrl('CmnNzGGWAAAbKoR.remini-enhanced (1).jpg')],
   '2006': [],
   '2008': [],
-  '2012': [],
+  '2012': [getUrl('1602231619902.jpg')],
   '2012-15': [],
-  '2015': [],
+  '2015': [getUrl('IMG-20231001-WA0012.jpg')],
+  '2017': [getUrl('1602231619902.jpg'), getUrl('20240123_132616.jpg'), getUrl('20240208_143902.jpg'),],
   '2016-18': [],
   '2018-20': [],
-  '2018 - Now': [],
-  '2019': [],
-  '2019-22': [],
+  '2018 - Now': [getUrl('Captureddd.remini-enhanced.jpg')],
+  '2019': [
+    getUrl('D4r4GaLX4AADp4s.remini-enhanced.png'),
+    getUrl('IMG-20231001-WA0014.jpg'),
+    getUrl('Screenshot_20190520-232647_Instagram.jpg'),
+    getUrl('Screenshot_20190520-232742_Instagram.jpg'),
+    getUrl('maxresdefault (1).jpg')
+
+
+  ],
+  '2019-22': [getUrl('Capturedd.remini-enhanced.jpg')],
   '2021-22': [],
-  '2021-25': [],
-  '2022-Now': [],
-  '2024': [],
+  '2021-25': [getUrl('Capturedddd.remini-enhanced.jpg')],
+  '2022-Now': [
+    getUrl('Capturegr.jpg'),
+    getUrl('Captureu.jpg'),
+    getUrl('IMG-20230802-WA0017.jpg'),
+    getUrl('IMG-20231024-WA0009.jpg'),
+    getUrl('IMG-20231115-WA0038.remini-enhanced.png'),
+  ],
+  '2024': [
+    getUrl('IMG-20240328-WA0009.remini-enhanced.png'),
+    getUrl('IMG-20240330-WA0000.remini-enhanced.png'),
+    getUrl('IMG_8571.jpg')],
 };

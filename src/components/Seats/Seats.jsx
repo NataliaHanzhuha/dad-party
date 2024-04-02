@@ -25,7 +25,7 @@ function Seats() {
   return <>
     <section className="main seats">
       {!loaded && <p>Loading...</p>}
-      {isMobileScreen && loaded && <p className={'tip'}>Click on image for maximizing and zooming...</p>}
+      {isMobileScreen && loaded && <p className={'tip'}>Click on image before zooming in...</p>}
       {urls.map((url) =>
         <img src={url}
              key={url}

@@ -22,7 +22,7 @@ function SlideShow({images, maxPhoto = false, imageClick}) {
                        showThumbnails={maxPhoto}
                        showFullscreenButton={maxPhoto}
                        showPlayButton={false}
-                       showBullets={true}
+                       showBullets={images?.label > 1}
                        loading={'lazy'}
                        onClick={imageClick}
   />;
@@ -61,7 +61,7 @@ function Story() {
       <div className={styles.descriptionWrapper}
            onClick={() => toggleFullSizePhoto(item)}>
         <div className={styles.text}>{text}</div>
-        {isMobileScreen && <p className={styles.tip}>Click on image for see more...</p>}
+        {isMobileScreen && <p className={styles.tip}>Click on image to see more...</p>}
       </div>
     </>;
   }
