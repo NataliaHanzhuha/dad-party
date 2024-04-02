@@ -71,6 +71,11 @@
   /*padding: 0 10px;*/
 }
 
+.video {
+  height: 30vh;
+  z-index: -3;
+}
+
 .fullSizeWrapper {
   display: flex;
   flex-direction: column;

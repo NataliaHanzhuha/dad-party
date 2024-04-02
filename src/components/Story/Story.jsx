@@ -3,6 +3,7 @@ import styles from './Story.module.css';
 import { Modal } from '../../utillits/Modal/Modal';
 import { useState } from 'react';
 import { imageLink } from '../../firebase';
+import biographyVidep from '../../images/biography.mp4';
 
 function getUrl(name) {
   return imageLink('biography', name, process.env.REACT_APP_B_IMAGE_TOKEN);
@@ -472,15 +473,14 @@ function Story() {
 
   return <>
     <section className={styles.section}>
-      <iframe width="100%"
-              height="315"
-              src="https://www.youtube.com/embed/kriaFd5Sggk?si=GQ7Yp45L2RR0QNYP"
-              title="YouTube video player"
-              frameBorder="0"
-              className={styles.video}
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen></iframe>
-
+      <video autoPlay
+             loop
+             className={styles.video}
+             muted>
+        <source src={biographyVidep}
+                type="video/mp4"/>
+        Your browser does not support the video tag.
+      </video>
       <div className={styles.timelineWrapper}>
         {timelineHash.map((item, index) => {
           const showYear = index ? item?.year !== timelineHash[index - 1]?.year : true;
@@ -495,7 +495,8 @@ function Story() {
             {showYear && <div className={styles.year}>{item.year}</div>}
             <div className={styles.itemWrapper}
                  onClick={() => toggleFullSizePhoto(item)}>
-              <Photo item={item} description={description}/>
+              <Photo item={item}
+                     description={description}/>
               {/*<img src={item?.image}*/}
               {/*     alt={item?.text}*/}
               {/*     loading="lazy"*/}
