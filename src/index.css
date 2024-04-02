@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Jost&family=Didact+Gothic&display=swap');
 @import 'react-inner-image-zoom/lib/InnerImageZoom/styles.min.css';
+@import "~react-image-gallery/styles/css/image-gallery.css";
 
 :root {
   --gold: #ddb86d;
@@ -323,4 +324,26 @@ section::after,
   text-align: center;
   width: 100%;
   margin: 0;
+}
+
+.image-gallery-slides {
+  min-width: 34vw;
+}
+
+@media only screen and (min-width: 450px) and (max-width: 600px){
+  .image-gallery-slides {
+    min-width: 38vw;
+  }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
+  .image-gallery-slides {
+    min-width: 40vw;
+  }
+}
+
+@media only screen and (min-height: 1024px) {
+  .image-gallery-slides {
+    min-width: 40vw;
+  }
 }

@@ -4,25 +4,31 @@ import styles from './Main.module.css';
 import blinksVideo from '../../images/Happy_Birthday_Animation.mov';
 import { useState } from 'react';
 
-function Main() {
+export function Video({videoSrc, videoClass, placeholderClass}) {
   const [loading, setLoadCount] = useState(true);
 
-  return <section className={'main ' + styles.section}>
+  return <>
     {loading && <img src={preview}
                      width="100%"
                      height="216px"
-                     className={styles.previewImage}
+                     className={placeholderClass}
                      alt="video preview"/>}
     <video autoPlay
-           className={styles.video}
+           className={videoClass}
            onLoadStart={() => setLoadCount(true)}
            onLoadedData={() => setLoadCount(false)}
            loop
            muted>
-      <source src={blinksVideo}
+      <source src={videoSrc}
               type="video/mp4"/>
       Your browser does not support the video tag.
     </video>
+  </>
+}
+
+function Main() {
+  return <section className={'main ' + styles.section}>
+    <Video videoSrc={blinksVideo} videoClass={styles.video} placeholderClass={styles.previewImage}/>
 
     <img src={yearsCard}
          className={styles.yearImage}

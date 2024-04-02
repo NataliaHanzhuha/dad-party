@@ -26,7 +26,7 @@ function App() {
 
   useEffect(() => {
     // runs on location, i.e. route, change
-    console.log('handle route change here', location)
+    // console.log('handle route change here', location)
 
     if (location?.pathname?.length === 1 || location.pathname === '/seats') {
       setLabel(null)
