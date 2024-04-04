@@ -553,7 +553,7 @@ export const biography = () => {
     'Continues to spread awareness and sensitisation lectures on AfCFTA and has successfully trained government organisations' +
     ' including Nigerian Customs, Ministry of Finance, Ministry of Industry Trade and Investment, organised private sector,' +
     ' Central Bank of Nigeria, and others.');
-  timelineHash.set('2024', 'Jonathan Aremu is married with 4 Children and currently several grandchildren.');
+  timelineHash.set('2024', 'Jonathan Aremu is married with 4 Children and several grandchildren.');
 
 
   return timelineHash;
@@ -600,7 +600,7 @@ export const biographyImages = {
   '2012 - 2015': [],
   '2015': [getUrl('IMG-20231001-WA0012.jpg')],
   '2017': [getUrl('1602231619902.jpg'), getUrl('20240123_132616.jpg'), getUrl('20240208_143902.jpg'),],
-  '2016 - 2018': [],
+  '2016 - 2018': [getUrl('IMG-20230526-WA0005.jpg')],
   '2018 - 2020': [],
   '2018 - Now': [getUrl('Captureddd.remini-enhanced.jpg')],
   '2019': [
@@ -612,8 +612,14 @@ export const biographyImages = {
 
 
   ],
-  '2019 - 2022': [getUrl('Capturedd.remini-enhanced.jpg')],
-  '2021 - 2022': [],
+  '2019 - 2022': [getUrl('7b4197d7-7ac7-4785-b689-d9a15ce2c309.jpeg'), getUrl('Capturedd.remini-enhanced.jpg')],
+  '2021 - 2022': [
+    getUrl('IMG-20230526-WA0005.jpg'),
+    getUrl('1d4ad557-ed48-409d-a364-b270e7ab348d.remini-enhanced.jpg'),
+    getUrl('image.remini-enhanced.png'),
+    getUrl('IMG-20231121-WA0008.remini-enhanced.png'),
+    getUrl('IMG-20231121-WA0010 (1).remini-enhanced.png')
+  ],
   '2021 - 2025': [getUrl('Capturedddd.remini-enhanced.jpg')],
   '2022 - Now': [
     getUrl('Capturegr.jpg'),
@@ -621,9 +627,13 @@ export const biographyImages = {
     getUrl('IMG-20230802-WA0017.jpg'),
     getUrl('IMG-20231024-WA0009.jpg'),
     getUrl('IMG-20231115-WA0038.remini-enhanced.png'),
+    getUrl('IMG-20240323-WA0016.jpg'),
   ],
   '2024': [
+    getUrl('Screenshot_20220816-053800_Gallery.remini-enhanced.png'),
     getUrl('IMG-20240328-WA0009.remini-enhanced.png'),
     getUrl('IMG-20240330-WA0000.remini-enhanced.png'),
-    getUrl('IMG_8571.jpg')],
+    getUrl('IMG_8571.jpg'),
+    getUrl('Screenshot_20230426_162720_Gallery.jpg'),
+  ],
 };

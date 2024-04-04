@@ -22,11 +22,7 @@ body {
   background: var(--black);
   color: var(--white);
   position: relative;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 #root {
@@ -332,6 +328,7 @@ section::after,
 
 .image-gallery-slide .image-gallery-image {
   border-radius: 10px;
+  max-width: 50vw;
 }
 
 @media only screen and (min-width: 450px) and (max-width: 600px){
