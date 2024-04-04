@@ -62,7 +62,7 @@ function Story() {
       <div className={styles.descriptionWrapper}
            onClick={() => toggleFullSizePhoto(item)}>
         <div className={styles.text}>{text}</div>
-        {isMobileScreen && <p className={styles.tip}>Click on image or text to see more...</p>}
+        <p className={styles.tip}>Click on image or text to see more...</p>
       </div>
     </>;
   }
