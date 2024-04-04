@@ -190,8 +190,9 @@ i {
   }
 
   .year {
-    font-size: 50px;
+    font-size: 32px;
     padding: 5px 15px;
+    max-width: 400px;
   }
 
   .descriptionWrapper, .textSummary, .fullSizeWrapper p {
@@ -221,17 +222,20 @@ i {
   .description p {
     margin: 0 0 20px;
   }
+
+  .modalDescription {
+    align-items: center;
+  }
 }
 
 
 @media only screen and (min-width: 600px) and (max-width: 1280px) and (orientation: landscape) {
   .fullSizeWrapper {
-    flex-direction: row;
     align-items: center;
   }
 
-  .year {
-    margin-left: 50%;
+  .fullSizeWrapper > .image-gallery-slide .image-gallery-image{
+    max-width: 80vw;
   }
 
   .tip {
