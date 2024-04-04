@@ -2,10 +2,9 @@ import styles from './Story.module.css';
 
 import { Modal } from '../../utillits/Modal/Modal';
 import { useState } from 'react';
-import biographyVidep from '../../images/biography.mp4';
 import { Video } from '../Main/Main';
 import ImageGallery from 'react-image-gallery';
-import { biography, biographyImages } from '../../constants';
+import { biography, biographyImages, biographyPageVideo } from '../../constants';
 import useScreenSize from '../../utillits/useScreenSize';
 
 const timelineHash = biography();
@@ -70,7 +69,7 @@ function Story() {
 
   return <>
     <section className={styles.section}>
-      <Video videoSrc={biographyVidep}
+      <Video videoSrc={biographyPageVideo()}
              videoClass={styles.video}
              placeholderClass={styles.previewImage}/>
 

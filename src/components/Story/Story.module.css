@@ -114,7 +114,7 @@
 .previewImage {
   object-fit: contain;
   width: 70%;
-  transform: translateY(-8vh);
+  transform: translateY(2vh);
   animation: pulse 8s infinite;
 }
 

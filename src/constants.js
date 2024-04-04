@@ -1,38 +1,4 @@
-import oldManPhoto from './images/old-man.jpeg';
 import { imageLink } from './firebase';
-
-export const timelineHash = {
-  1951: [
-    {
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    },
-    {
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    }
-  ],
-  1961: [
-    {
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    },
-    {
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    }
-  ],
-  1971: [
-    {
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    },
-    {
-      image: oldManPhoto,
-      text: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo, suscipit!'
-    }
-  ],
-};
 
 
 // const timelineHash = [
@@ -595,6 +561,14 @@ export const biography = () => {
 
 function getUrl(name) {
   return imageLink('biography', name, process.env.REACT_APP_B_IMAGE_TOKEN);
+}
+
+export const mainPageVideo = () => {
+  return imageLink('videos', 'Happy_Birthday_Animation.mov', process.env.REACT_APP_VIDEO_IMAGE_TOKEN);
+}
+
+export const biographyPageVideo = () => {
+  return imageLink('videos', 'biography.mp4', process.env.REACT_APP_VIDEO_IMAGE_TOKEN);
 }
 
 export const biographyImages = {

@@ -1,6 +1,6 @@
 :root {
-  --min-height: -8vh;
-  --max-height: -8vh;
+  --min-height: 2vh;
+  --max-height: 2vh;
   --min-scale: .9;
   --max-scale: 1;
 }

@@ -1,8 +1,8 @@
 import yearsCard from '../../images/70th-logo.png';
 import preview from '../../images/video-preview.png';
 import styles from './Main.module.css';
-import blinksVideo from '../../images/Happy_Birthday_Animation.mov';
 import { useState } from 'react';
+import { mainPageVideo } from '../../constants';
 
 export function Video({videoSrc, videoClass, placeholderClass}) {
   const [loading, setLoadCount] = useState(true);
@@ -28,7 +28,7 @@ export function Video({videoSrc, videoClass, placeholderClass}) {
 
 function Main() {
   return <section className={'main ' + styles.section}>
-    <Video videoSrc={blinksVideo} videoClass={styles.video} placeholderClass={styles.previewImage}/>
+    <Video videoSrc={mainPageVideo()} videoClass={styles.video} placeholderClass={styles.previewImage}/>
 
     <img src={yearsCard}
          className={styles.yearImage}
