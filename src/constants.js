@@ -574,24 +574,32 @@ export const biographyPageVideo = () => {
 export const biographyImages = {
   '1954': [],
   '1959': [],
-  '1964 - 1965': [getUrl('IMG-20240305-WA0108.remini-enhanced.jpg')],
-  '1966': [],
+  '1964 - 1965': [
+    getUrl('IMG-20240305-WA0108.remini-enhanced.jpg'),
+    getUrl('1964-1965.jpg')],
+  '1966': [getUrl('1966.remini-enhanced.png')],
   '1967 - 1968': [],
-  '1971 - 1972': [getUrl('Screenshot_20240402-230805_Drive.remini-enhanced.png'), getUrl('IMG-20240305-WA0058 (1).remini-enhanced.jpg')],
+  '1971 - 1972': [
+    getUrl('Screenshot_20240402-230805_Drive.remini-enhanced.png'),
+    getUrl('IMG-20240305-WA0058 (1).remini-enhanced.jpg')],
   '1973': [],
   '1974': [],
   '1975': [],
-  '1976': [],
+  '1976': [getUrl('1976.remini-enhanced.png')],
   '1979': [getUrl('snip 2.remini-enhanced (1).jpg')],
-  '1980': [],
+  '1980': [getUrl('1980.remini-enhanced.png'), getUrl('CBN.remini-enhanced.png')],
   '1990': [],
-  '1980 - 1992': [],
-  '1992 - 1993': [getUrl('IMG-20240305-WA0069.remini-enhanced.png'), getUrl('IMG-20240404-WA0001.remini-enhanced.png')],
+  '1980 - 1992': [getUrl('1980-92.png'), getUrl('1980-92....remini-enhanced.png')],
+  '1992 - 1993': [
+    getUrl('IMG-20240305-WA0069.remini-enhanced.png'),
+    getUrl('IMG-20240404-WA0001.remini-enhanced.png')],
   '1993': [],
   '1993 - 2004': [getUrl('image.remini-enhanced (1).jpg')],
   '1998': [],
   '2001': [],
-  '2002 - 2004': [getUrl('IMG-20240305-WA0068.jpg'), getUrl('IMG-20240305-WA0096.jpg')],
+  '2002 - 2004': [
+    getUrl('IMG-20240305-WA0068.jpg'),
+    getUrl('IMG-20240305-WA0096.jpg')],
   '2004': [],
   '2005': [getUrl('CmnNzGGWAAAbKoR.remini-enhanced (1).jpg')],
   '2006': [],
@@ -599,7 +607,10 @@ export const biographyImages = {
   '2012': [getUrl('2012.png')],
   '2012 - 2015': [],
   '2015': [getUrl('IMG-20231001-WA0012.jpg')],
-  '2017': [getUrl('1602231619902.jpg'), getUrl('20240123_132616.jpg'), getUrl('20240208_143902.jpg'),],
+  '2017': [
+    getUrl('1602231619902.jpg'),
+    getUrl('20240123_132616.jpg'),
+    getUrl('20240208_143902.jpg'),],
   '2016 - 2018': [getUrl('IMG-20230526-WA0005.jpg')],
   '2018 - 2020': [],
   '2018 - Now': [getUrl('Captureddd.remini-enhanced.jpg')],
@@ -608,11 +619,13 @@ export const biographyImages = {
     getUrl('IMG-20231001-WA0014.jpg'),
     getUrl('Screenshot_20190520-232647_Instagram.jpg'),
     getUrl('Screenshot_20190520-232742_Instagram.jpg'),
-    getUrl('maxresdefault (1).jpg')
-
-
+    getUrl('maxresdefault (1).jpg'),
+    getUrl('2019.jpg')
   ],
-  '2019 - 2022': [getUrl('7b4197d7-7ac7-4785-b689-d9a15ce2c309.jpeg'), getUrl('Capturedd.remini-enhanced.jpg')],
+  '2019 - 2022': [
+    getUrl('7b4197d7-7ac7-4785-b689-d9a15ce2c309.jpeg'),
+    getUrl('Capturedd.remini-enhanced.jpg')
+  ],
   '2021 - 2022': [
     getUrl('IMG-20230526-WA0005.jpg'),
     getUrl('1d4ad557-ed48-409d-a364-b270e7ab348d.remini-enhanced.jpg'),

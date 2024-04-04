@@ -79,7 +79,7 @@ function Story() {
                       className={styles.yearWrapper}>
             <div className={styles.year}>{year}</div>
 
-            <div className={styles.itemWrapper}>
+            <div className={styles.itemWrapper + ' photoWrapper'}>
               <Photo item={year}/>
             </div>
           </div>;
