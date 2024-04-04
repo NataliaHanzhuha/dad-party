@@ -12,7 +12,7 @@ function Seats() {
   const isMobileScreen = screenSize?.width < 900;
   useEffect(() => {
     const folder = 'seats';
-    const images = ['Untitled-11.png', 'Untitled-10.png'];
+    const images = ['seats.png', 'Untitled-10.png'];
     setUrls(images.map((name) => imageLink(folder, name)));
   }, []);
 

@@ -8,16 +8,16 @@ function Events() {
     {time: '4:45 pm', events: [{name: 'Guests Seated'}]},
     {time: '5:00 pm', events: [{name: 'Entrance of the Celebrant'}]},
     {time: '5:20 pm', events: [{name: 'Opening Prayer'}]},
+    {time: '-', events: [{name: 'Biography'}]},
     {time: '5:20 pm - 5:30 pm', events: [{name: 'Good Will Messages and Speeches'}]},
     {time: '-', events: [{name: 'Presentation by Grand Kids'}]},
-    {time: '5:40 pm', events: [{name: 'Dinner'}]},
+    {time: '5:40 pm', events: [{name: 'Dinner | Photo Session'}]},
     {time: '5:20 pm - 5:30 pm', events: [{name: 'Good Will Messages and Speeches'}]},
     {time: '-', events: [{name: 'Cutting of the Cake'}]},
     {time: '-', events: [{name: 'Prayer for the Celebrant and Family'}]},
     {time: '-', events: [{name: 'Toast'}]},
     {time: '-', events: [{name: 'Vote of Thanks'}]},
     {time: '-', events: [{name: 'Closing Prayer'}]},
-    {time: '6:50 pm - 6:55 pm', events: [{name: 'Photo Session'}]},
     {time: '-', events: [{name: 'Dance Dance Dance'}]},
   ];
 

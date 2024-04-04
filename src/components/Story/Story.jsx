@@ -37,7 +37,9 @@ const FullSizeImage = ({fullSizePhoto}) => {
                             maxPhoto={true}/>}
     <div className={styles.modalDescription}>
       <div className={styles.year}>{fullSizePhoto}</div>
-      <p className={styles.description}>{text}</p>
+      <div className={styles.description}>
+        {text.split('\n').map((paragraph) => <p>{paragraph}</p>)}
+      </div>
     </div>
 
   </div>;
@@ -57,11 +59,11 @@ function Story() {
       {imageSrc && <SlideShow images={images[item]}
                               maxPhoto={!isMobileScreen}
                               imageClick={() => toggleFullSizePhoto(item)}/>}
-      {imageSrc && <div className={styles.line}></div>}
+      {/*{imageSrc && <div className={styles.line}></div>}*/}
       <div className={styles.descriptionWrapper}
            onClick={() => toggleFullSizePhoto(item)}>
         <div className={styles.text}>{text}</div>
-        {isMobileScreen && <p className={styles.tip}>Click on image to see more...</p>}
+        {isMobileScreen && <p className={styles.tip}>Click on image or text to see more...</p>}
       </div>
     </>;
   }
