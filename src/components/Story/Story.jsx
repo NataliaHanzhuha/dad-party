@@ -5,7 +5,6 @@ import { useState } from 'react';
 import { Video } from '../Main/Main';
 import ImageGallery from 'react-image-gallery';
 import { biography, biographyImages, biographyPageVideo } from '../../constants';
-import useScreenSize from '../../utillits/useScreenSize';
 
 const timelineHash = biography();
 const images = biographyImages;
@@ -32,8 +31,7 @@ const FullSizeImage = ({fullSizePhoto}) => {
   const imageSrc = images[fullSizePhoto] && images[fullSizePhoto].length ? images[fullSizePhoto][0] : null;
 
   return <div className={styles.fullSizeWrapper}>
-    {imageSrc && <SlideShow images={images[fullSizePhoto]}
-                            maxPhoto={true}/>}
+    {imageSrc && <SlideShow images={images[fullSizePhoto]}/>}
     <div className={styles.modalDescription}>
       <div className={styles.year}>{fullSizePhoto}</div>
       <div className={styles.description}>
@@ -45,8 +43,6 @@ const FullSizeImage = ({fullSizePhoto}) => {
 };
 
 function Story() {
-  const screenSize = useScreenSize();
-  const isMobileScreen = screenSize?.width < 900;
   const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
   const timelineKeys = Array.from(timelineHash.keys());
 
@@ -56,7 +52,6 @@ function Story() {
 
     return <>
       {imageSrc && <SlideShow images={images[item]}
-                              maxPhoto={!isMobileScreen}
                               imageClick={() => toggleFullSizePhoto(item)}/>}
       {/*{imageSrc && <div className={styles.line}></div>}*/}
       <div className={styles.descriptionWrapper}

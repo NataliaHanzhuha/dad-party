@@ -586,7 +586,7 @@ export const biographyImages = {
   '1974': [],
   '1975': [],
   '1976': [getUrl('1976.remini-enhanced.png')],
-  '1979': [getUrl('snip 2.remini-enhanced (1).jpg')],
+  '1979': [getUrl('IMG-20240305-WA0110 (1).remini-enhanced.png')],
   '1980': [getUrl('1980.remini-enhanced.png'), getUrl('CBN.remini-enhanced.png')],
   '1990': [],
   '1980 - 1992': [getUrl('1980-92.png'), getUrl('1980-92....remini-enhanced.png')],

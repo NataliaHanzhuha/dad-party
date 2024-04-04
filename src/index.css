@@ -281,6 +281,10 @@ section::after,
   .header > button {
     display: none;
   }
+
+  .image-gallery-slide .image-gallery-image {
+    max-width: 80vh;
+  }
 }
 
 .seats {
@@ -294,11 +298,6 @@ section::after,
   max-height: 100%;
   display: block;
   object-fit: contain;
-}
-
-.kvfysmfp {
-  max-height: 95vh;
-  display: flex;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -328,6 +327,7 @@ section::after,
 
 .image-gallery-slide .image-gallery-image {
   border-radius: 10px;
+  max-width: 80vw;
 }
 
 .photoWrapper > .image-gallery-slide .image-gallery-image{
