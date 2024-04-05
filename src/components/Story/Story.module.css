@@ -1,7 +1,7 @@
 .section {
   margin-bottom: 100px;
-  padding-left: 10vw;
-  width: calc(100% - 10vw);
+  padding-left: 7vw;
+  width: calc(100% - 7vw);
 }
 
 .timelineWrapper {
@@ -54,7 +54,7 @@
   display: flex;
   justify-content: space-between;
   width: 100%;
-  gap: 30px;
+  gap: 20px;
   align-items: center;
   position: relative;
   padding-bottom: 30px;
