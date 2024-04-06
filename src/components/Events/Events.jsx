@@ -22,12 +22,10 @@ function Events() {
   ];
 
   return<section className={styles.section}>
-
     <div className={styles.eventsWrapper}>
       {eventHash.map((event) => <p className={styles.eventName}>{event}</p>)}
     </div>
   </section>
-
 }
 
 export default Events;

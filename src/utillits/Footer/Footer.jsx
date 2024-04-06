@@ -18,7 +18,7 @@ const linkedIn = "https://www.linkedin.com/in/nataliia-hanzhuha-41a058242/";
              alt="linked in logo"/>
       </a>
 
-      <a href="mailto:nataliiahanzhuha@gmail.com">
+      <a href="mailto:nataliiahanzhuhawork@gmail.com">
         <img src={mailIcon}
              width={24}
              alt="mail logo"/>
