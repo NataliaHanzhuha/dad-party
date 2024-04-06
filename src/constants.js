@@ -627,7 +627,6 @@ export const biographyImages = {
     getUrl('Capturedd.remini-enhanced.jpg')
   ],
   '2021 - 2022': [
-    getUrl('IMG-20230526-WA0005.jpg'),
     getUrl('1d4ad557-ed48-409d-a364-b270e7ab348d.remini-enhanced.jpg'),
     getUrl('image.remini-enhanced.png'),
     getUrl('IMG-20231121-WA0008.remini-enhanced.png'),

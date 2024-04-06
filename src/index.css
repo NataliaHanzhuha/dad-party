@@ -257,7 +257,7 @@ section::after,
   letter-spacing: .5ch;
 
   @media screen and (orientation: landscape) {
-    font-size: 11vh;
+    font-size: 10vh;
     transform: rotate(270deg) translateX(-7ch) translateY(-47vw);
   }
 
