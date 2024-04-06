@@ -11,6 +11,7 @@ function Events() {
     'Good Will Messages and Speeches',
     'Presentation by Grand Kids',
     'Dinner | Photo Session',
+    'Good Will Messages and Speeches',
     'Cutting of the Cake',
     'Good Will Messages and Speeches',
     'Prayer for the Celebrant and Family',
