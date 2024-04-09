@@ -467,14 +467,13 @@ export const biography = () => {
   timelineHash.set('1959', 'Started Primary school at Evangelical Church Winning All (ECWA), Kwara State, Nigeria in 1959 ' +
     'and completed his primary education in 1965; in the midst of rigorous financial challenges.');
   timelineHash.set('1964 - 1965', 'Admitted to Playfair Memorial College, Oro Agor twice (1964 and 1965) but could not resume due to financial challenges.\n' +
-    'His father decided to send him to Lagos to provide him with some exposure, drawing from his own first-hand experience in Lagos between 1925 and 1940.' +
-    'in Lagos between 1915 and 1920. ');
+    'His father decided to send him to Lagos to provide him with some exposure, drawing from his own first-hand experience in Lagos between 1925 and 1940.');
   timelineHash.set('1966', 'Moved to Lagos, Nigeria’s capital city at that time, to work as a domestic servant and street' +
     ' hawker with a salary of 2 Nigerian Naira per month (approx. $1 in today’s money).\n' +
     'Before moving on to another job of selling books in Idumota, Lagos, he worked at the Tom Jones area of Lagos selling hair thread products as a street hawker.');
-  timelineHash.set('1967 - 1968', 'Left Lagos to return to Kwara State to explore options for beter education.\n' +
+  timelineHash.set('1967 - 1968', 'Left Lagos to return to Kwara State to explore options for better education.\n' +
   'Enrolled in the SIM/ECWA Teachers College, Igbaja, Kwara State; and graduated as a Primary School Teacher in 1972.\n' +
- ' Survived in the institution financially by engaging in labor activities like harvesting fire wood and selling to the school authority for use in the dining hall');
+  'Survived in the institution financially by engaging in labor activities like harvesting fire wood and selling to the school authority for use in the dining hall');
   timelineHash.set('1971 - 1972', 'Became the State Basketball Champion as the Captain, Kwara State under the guidance of' +
     ' Coach Kenneth Lloyd, an American Professional basketball player and Missionary at Igbaja Teachers’ College; and he' +
     ' maintains contact with Coach Kenneth Lloyd, who now resides in SIM Residence, Miami, Florida, in United States.\n' +
@@ -485,7 +484,7 @@ export const biography = () => {
     'State, but previously Kwara State in Nigeria between 1973 and 1974\n' +
     'Despite the poor living conditions among the Keberis, he performed his teaching duties with zeal, endeavouring to ' +
     'instil the value of education in the local populace, even amidst their initial reluctance');
-  timelineHash.set('1974', 'Successfully passed his 5 papers of GCE London examination, marking a significant milestone in his academic journey January 1974.\n' +
+  timelineHash.set('1974', 'Successfully passed his 5 papers of GCE London examination, marking a significant milestone in his academic journey in January 1974.\n' +
     'Commenced studying at Kwara State College of Technology, School of Education to read Nigerian Certificate of Education' +
     ' (reading Mathematics and Geography) in September 1974.\n' +
     'Was encouraged to cross over to the School of Basic Studies, from School of Education, in same school, because of ' +
@@ -536,11 +535,11 @@ export const biography = () => {
     'This work led to the adoption of a move by the Head of States of ECOWAS on a common position on Investment Code and Policy.\n' +
     'Recruited by BizClim again along with 2 others experts from Europe to develop a draft of the Common Investment Code' +
     ' and Investment Policy for Community, in line with the ECOWAS Treaty.');
-  timelineHash.set('2008', 'Engaged by ECOWAS Commission, after completion of the Bizclim assignment to develop the draft' +
+  timelineHash.set('2008', 'Engaged by ECOWAS Commission, after completion of the BizClim assignment to develop the draft' +
     ' of the Common Investment Code and Investment Policy for adoption of the Heads of States, which was finally adopted in 2018.');
   timelineHash.set('2009 - 2011', 'National Coordinator/ Country Team Leader for Nigeria on United Nations Industrial' +
     ' Development Organization (UNIDO) Afripanet Study on African Investment Survey in Nigeria');
-  timelineHash.set('2010 - 2017', 'Appointed as a Member of the Board of Regents, and later Pro-Chancellor (2011-1012)' +
+  timelineHash.set('2010 - 2017', 'Appointed as a Member of the Board of Regents, and later Pro-Chancellor (2011-2012)' +
     ' of Landmark University, Omu Aran');
   timelineHash.set('2012', 'An Acropolis-theme Park (owned by Market link Consults) received government approval for Construction');
   timelineHash.set('2012 - 2015', 'Appointed as one of the experts by African Union (AU) to develop the Pan-African' +
@@ -552,7 +551,7 @@ export const biography = () => {
     'Acropolis Phase I development commissioned; with Phase II beginning immediately after.');
   timelineHash.set('2018 - 2020', 'Appointed United Nations Conference on Trade and Development (UNCTAD) Consultant of' +
     ' Trade in Services Policy Review for the ECOWAS Region.');
-  timelineHash.set('2018 - Now', 'Facilitator of Trade, Investment and Competitiveness for the NESG.');
+  timelineHash.set('2018 - Now', 'Facilitator of Trade, Investment and Competitiveness for the Nigerian Economic Summit Group (NESG).');
   timelineHash.set('2019', 'Delivered his Inaugural Lecture as Professor of Covenant University on Sequencing and' +
     ' Negotiating Nigeria’s Regional and Multilateral Trade \n' +
     'Became a Member of the Editorial Board of Canadian Institute for International Law Expertise (CIFILE), Toronto.');
@@ -563,10 +562,10 @@ export const biography = () => {
     ' current National Development Plan (2021-2025) by the Federal Government of Nigeria.');
   timelineHash.set('2022 - Now', 'Appointed by ECOWAS Commission to Develop Working Procedure of ECOWAS Common Investment' +
     ' Market Council made up of all Ministers of Investment in the ECOWAS region.\n' +
-    'Continues to spread awareness and sensitisation lectures on AfCTA and has successfully trained government organisations' +
+    'Continues to spread awareness and sensitisation lectures on AfCFTA and has successfully trained government organisations' +
     ' including Nigerian Customs, Ministry of Finance, Ministry of Industry Trade and Investment, organised private sector,' +
     ' Central Bank of Nigeria, and others.');
-  timelineHash.set('2024', 'Jonathan Aremu is married with 4 Children and currently grandchildren.');
+  timelineHash.set('2024', 'Jonathan Aremu is married with 4 children and several grandchildren.');
 
 
   return timelineHash;
