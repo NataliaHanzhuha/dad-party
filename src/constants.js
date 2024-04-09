@@ -463,97 +463,110 @@ export const menuHash = {
 export const biography = () => {
   const timelineHash = new Map();
   timelineHash.set('1954', 'Born April 26, 1954 in the town of Oko, Kwara State as the third of seven Children to Mr Ayantoye Kolawole Bale Aremu.\n' +
-    'Ayantoye, which was his father’s name, relates to the family’s drumming heritage.');
-  timelineHash.set('1959', 'Started Primary school at Evangelical Church Winning All (ECWA), Kwara State, in the midst of rigorous financial challenges. ');
-  timelineHash.set('1964 - 1965', 'Admitted to Playfair Memorial College, immediately after primary school, but could not resume due to financial challenges.\n' +
-    'His father decided to send him to Lagos to provide him with some exposure, drawing from his own first-hand experience ' +
+    'Ayantoye, which was his father’s name relates to the family’s drumming heritage.');
+  timelineHash.set('1959', 'Started Primary school at Evangelical Church Winning All (ECWA), Kwara State, Nigeria in 1959 ' +
+    'and completed his primary education in 1965; in the midst of rigorous financial challenges.');
+  timelineHash.set('1964 - 1965', 'Admitted to Playfair Memorial College, Oro Agor twice (1964 and 1965) but could not resume due to financial challenges.\n' +
+    'His father decided to send him to Lagos to provide him with some exposure, drawing from his own first-hand experience in Lagos between 1925 and 1940.' +
     'in Lagos between 1915 and 1920. ');
-  timelineHash.set('1966', 'Moved to Lagos, Nigeria’s capital city at that time, to work as a domestic servant with a salary of 2 Nigerian Naira ' +
-    'per month (approx. $1 in today’s money).\n' +
-    'Before moving on to another job of selling books in Idumota, Lagos, he worked at the Tom Jones area of Lagos ' +
-    'selling hair thread products as a street hawker.');
-  timelineHash.set('1967 - 1968', 'Left Lagos to return to Kwara State to explore options for secondary school level education.\n' +
-    'Enrolled in Igbaja teachers college, Kwara State; the promise of a stable career after five years of teacher’s training ' +
-    'seemed like a practical choice.\n' +
-    'Survived by engaging in labor activities like cutting and harvesting wood to sell to the school for its use.');
-  timelineHash.set('1971 - 1972', 'Selected to represent Kwara State in interstate basketball, under the guidance of Coach Kenneth Lloyd, an ' +
-    'American professional basketball player. He maintains contact with Coach Kenneth Lloyd, who now resides in Miami, Florida.\n' +
-    'Played alongside esteemed players like Joe Garba, known then as the best shooter in Africa.\n' +
-    'Garbar would later  become a Major General in the Nigerian Army and also served as a Minister for Foreign Affairs.');
-  timelineHash.set('1973', 'Served as an educator in the village of Papiri, formerly in Kebbi State, now Kwara State.\n' +
-    'Despite the poor living conditions, he embarked on his teaching duties with zeal, endeavouring to instill the value ' +
-    'of education in the local populace, even amidst their initial reluctance');
-  timelineHash.set('1974', 'Successfully passed his GCE London examination, marking a significant milestone in his academic journey.\n' +
-    'Commenced studying at Kwara State College of Education to achieve the Nigerian Certificate of Education.\n' +
-    'Was encouraged to cross over to Basic Studies, from School of Education, in same school, because of his performance.');
-  timelineHash.set('1975', 'Met Bishop David Oyedepo for the first time,in the Christian fellowship, in his second year at Kwara Tech.');
-  timelineHash.set('1976', 'Enrolled in the University of Ibadan, Oyo State to Study Economics, after leading the faculty of Social Science with the best result.');
+  timelineHash.set('1966', 'Moved to Lagos, Nigeria’s capital city at that time, to work as a domestic servant and street' +
+    ' hawker with a salary of 2 Nigerian Naira per month (approx. $1 in today’s money).\n' +
+    'Before moving on to another job of selling books in Idumota, Lagos, he worked at the Tom Jones area of Lagos selling hair thread products as a street hawker.');
+  timelineHash.set('1967 - 1968', 'Left Lagos to return to Kwara State to explore options for beter education.\n' +
+  'Enrolled in the SIM/ECWA Teachers College, Igbaja, Kwara State; and graduated as a Primary School Teacher in 1972.\n' +
+ ' Survived in the institution financially by engaging in labor activities like harvesting fire wood and selling to the school authority for use in the dining hall');
+  timelineHash.set('1971 - 1972', 'Became the State Basketball Champion as the Captain, Kwara State under the guidance of' +
+    ' Coach Kenneth Lloyd, an American Professional basketball player and Missionary at Igbaja Teachers’ College; and he' +
+    ' maintains contact with Coach Kenneth Lloyd, who now resides in SIM Residence, Miami, Florida, in United States.\n' +
+    'Played alongside esteemed players like the then Captain of Scorpion Team at Dodan Barack, then Colonel Joe Garba known ' +
+    'then as the best shooter in Basketball in Africa; Garba later become a Major General in the Nigerian Army and also ' +
+    'served as a Minister for Foreign Affairs.');
+  timelineHash.set('1973', 'Worked as a Teacher in Papir village, among the Tribe known as Kemberi in the current Kebbi ' +
+    'State, but previously Kwara State in Nigeria between 1973 and 1974\n' +
+    'Despite the poor living conditions among the Keberis, he performed his teaching duties with zeal, endeavouring to ' +
+    'instil the value of education in the local populace, even amidst their initial reluctance');
+  timelineHash.set('1974', 'Successfully passed his 5 papers of GCE London examination, marking a significant milestone in his academic journey January 1974.\n' +
+    'Commenced studying at Kwara State College of Technology, School of Education to read Nigerian Certificate of Education' +
+    ' (reading Mathematics and Geography) in September 1974.\n' +
+    'Was encouraged to cross over to the School of Basic Studies, from School of Education, in same school, because of ' +
+    'his qualifications and performance to read his Advanced Level Subjects.');
+  timelineHash.set('1975', 'Met Bishop David Oyedepo for the first time, in the Christian fellowship, in his second year at Kwara College of Technology.');
+  timelineHash.set('1976', 'Enrolled in the University of Ibadan, with the best result from the School of Basic Studies to Study Economics, and graduated in 1979.');
   timelineHash.set('1979', 'Married, early in the year, to a lovely woman from his village whom he had grown up together and families closely intertwined.\n' +
-    'Participated in the National Youth Service program of Nigeria.');
-  timelineHash.set('1980', 'Accepted a Job offer as Assistant Economist in the Research Department of Central Bank of Nigeria (CBN).');
+    'Participated in the National Youth Service program of Nigeria in 1979 to 1980 at St. John Vianney Seminary, Barakin Ladi, Plateau State Nigeria.');
+  timelineHash.set('1980', 'Accepted a Job offer as Assistant Economist in the Research Department of Central Bank of ' +
+    'Nigeria (CBN) at the completion of his service year in August 1980.');
   timelineHash.set('1980 - 1992', 'His promotions within the CBN were steady.\n' +
     '1980: Assistant Economist\n' +
     '1982: Economist\n' +
     '1985: Senior Economist\n' +
     '1988: Principal Economist.\n' +
-    '1992: Acting Assistant Director of Research/ Head of the Statistical Survey Office before retiring from the Central Bank.\n' +
-    'In 1991, he led a research study which was published in CBN’s Economic and Financial Review Vol. 29 No. 4 of 1991 ' +
-    'and resulted in the establishment of the Nigerian Investment Promotion Commission which still exists today.');
-  timelineHash.set('1990', 'Appointed as life member of the Nigerian Economic Society');
-  timelineHash.set('1992 - 1993', 'Obtained a Master’s Degree from University of Lagos\n' +
-    'Retired from the CBN to established Market Link Consult, Market Link International, and Market Link Communications\n' +
-    'The genesis of Market Link stemmed from a collaborative effort with a partner from Malaysia, Mr. Chu, with whom he ' +
-    'aimed to bridge the markets of Southeast Asia and Nigeria.');
-  timelineHash.set('1993', 'Became a member of the Nigerian Association of International Affairs.');
+    '1992: Acting Assistant Director of Research/ Head of the Statistical Survey Office before voluntarily retiring from ' +
+    'the Central Bank in December 1992.\n' +
+    'In 1991, while in the Research Department of the CBN, he led a research study which was published in CBN’s Economic' +
+    ' and Financial Review Vol. 29 No. 4 of 1991; the result of the research justified the establishment of the Nigerian' +
+    ' Investment Promotion Commission (NIPC) which still exists today.');
+  timelineHash.set('1990', 'Appointed as Life Member of the Nigerian Economic Society, while still in the CBN since 1990.');
+  timelineHash.set('1992 - 1993', 'Obtained his Master’s Degree from University of Lagos in 1992\n' +
+    'Voluntarily retired from the CBN in December 1992 to established Market Link Consult Ltd, Market Link International' +
+    ' Ltd, and Market Link Communications Ltd\n' +
+    'The genesis of the Market Link Group stemmed from a collaborative effort with a partner from Malaysia, Mr.Winton Chu,' +
+    ' with whom he aimed to bridge the markets between Southeast Asia and Nigeria.');
+  timelineHash.set('1993', 'Became a Member of the Nigerian Institute of International Affairs (NIIA) IN 1993.\n' +
+    'Became a Member of the Nigerian Society of International Law ');
   timelineHash.set('1993 - 2004', '1993: Joined Living Faith Church, Winners Chapel\n' +
     '1994: Appointed as Chairman of the Winners Business Fellowship\n' +
     '1995: Ordained as a Deacon at the Living Faith Church\n' +
-    '1996: Appointed as a member of the Church Council, Chairman of Dominion Airlines and a member of the Elder’s ' +
-    'Council of the Living Faith Church.\n' +
-    '1999: Established the Living Faith Church’s Hospitality Unit\n' +
-    '2004: Appointed as a Pastor at Winners Chapel International.');
-  timelineHash.set('1998', 'Became a life member of the Nigerian Society of International Law');
-  timelineHash.set('2001', 'Concluded his PhD');
-  timelineHash.set('2002 - 2004', '2002: Appointed as a pioneer member of the Covenant University Board of Regents\n' +
-    '2003: Served as a part-time lecturer in the department of Entrepreneurship; focused on globalization concepts within the Department of Entrepreneurship.\n' +
-    '2004: Appointed as Associate Senior Lecturer and later Acting Vice ' +
-    'Chancellor for Covenant University.');
-  timelineHash.set('2004', 'Journey with Economic Community Of West African States (ECOWAS) Commission began following a presentation ' +
-    'delivered at the Nigerian National Assembly on Trade and Trade Policy Coordination.\n' +
+    '1996: Appointed as a Member of the Church Council, Chairman of Dominion Airlines and a Member/Financial Secretary ' +
+    'of the Elder’s Council of the Living Faith Church, Lagos (later Faith Tabernacle).\n' +
+    '1999: Appointed to establish the Living Faith Church’s Hospitality Unit \n' +
+    '2004: Anointed/Ordained as a Pastor at Winners Chapel International.');
+  timelineHash.set('1998', 'Became a Life Member of the Nigerian Society of International Law');
+  timelineHash.set('2001', 'Concluded his PhD at the University of Abuja ');
+  timelineHash.set('2002 - 2004', '2002: Appointed as a pioneer Member of the Covenant University Board of Regents.\n' +
+    '2003: Served as an Associate Lecturer in the Department of Economics and Development Studies.\n' +
+    '2004: Appointed as Associate Senior Lecturer and later Acting Vice Chancellor for Covenant University.');
+  timelineHash.set('2004', 'Journey with Economic Community of West African States (ECOWAS) Commission began following a' +
+    ' presentation delivered at the Nigerian National Assembly on Trade and Trade Policy Coordination for Nigeria \n' +
     'A copy of the Presentation was sent to the then President of Nigeria, Olusegun Obasanjo, who responded with a Commendation Letter.\n' +
-    'Became a member of ECOWAS team to negotiate economic partnership agreement with the European Union with focus on Investment.');
-  timelineHash.set('2005', 'Published a book - Attracting and Negotiating Foreign Direct Investment with Transnational Corporations; lunched ' +
-    'in Abuja by the then President Olusegun Obasanjo.');
-  timelineHash.set('2006', 'Worked for BizClim of European Union (EU) to develop an Investment policy framework for the 15 member states ' +
-    'of ECOWAS.\n' +
+    'Became a member of ECOWAS Team to negotiate Economic Partnership Agreement with the European Union with focus on Investment.');
+  timelineHash.set('2005', 'Published a book - Attracting and Negotiating Foreign Direct Investment with Transnational' +
+    ' Corporations; launched in Abuja by the then President Olusegun Obasanjo as the Special Guest of Honor.');
+  timelineHash.set('2006', 'Worked for BizClim of European Union (EU) to develop an Investment Policy Framework for the 15 Member States of ECOWAS.\n' +
     'This work led to the adoption of a move by the Head of States of ECOWAS on a common position on Investment Code and Policy.\n' +
-    'Recruited by BizClim along with 2 others to make a draft of the Common Investment Code and Investment Policy.');
-  timelineHash.set('2008', 'Engaged by ECOWAS Commission to develop the draft of the Common Investment Code and Investment Policy for ' +
-    'adoption of the Heads of States, which was finally adopted in 2018.');
+    'Recruited by BizClim again along with 2 others experts from Europe to develop a draft of the Common Investment Code' +
+    ' and Investment Policy for Community, in line with the ECOWAS Treaty.');
+  timelineHash.set('2008', 'Engaged by ECOWAS Commission, after completion of the Bizclim assignment to develop the draft' +
+    ' of the Common Investment Code and Investment Policy for adoption of the Heads of States, which was finally adopted in 2018.');
+  timelineHash.set('2009 - 2011', 'National Coordinator/ Country Team Leader for Nigeria on United Nations Industrial' +
+    ' Development Organization (UNIDO) Afripanet Study on African Investment Survey in Nigeria');
+  timelineHash.set('2010 - 2017', 'Appointed as a Member of the Board of Regents, and later Pro-Chancellor (2011-1012)' +
+    ' of Landmark University, Omu Aran');
   timelineHash.set('2012', 'An Acropolis-theme Park (owned by Market link Consults) received government approval for Construction');
-  timelineHash.set('2012 - 2015', 'Appointed as one of the experts to develop the Pan-African Investment Code which was later adopted in 2015 by the ' +
-    'African Union Heads of State.');
-  timelineHash.set('2015', 'Appointed Professor by Covenant University.');
-  timelineHash.set('2016 - 2018', 'African Continental Free Trade Area (AfCFTA) started with Trades in Goods and Services and dispute settlement ' +
-    'protocols in Phase 1 till it was adopted.');
-  timelineHash.set('2017', 'Acropolis phase1 development commissioned; with phase 2 beginning immediately after.');
-  timelineHash.set('2018 - 2020', 'Appointed by the United Nations Conference on Trade and Development (UNCTAD) as a Consultant of Trade in Services Policy ' +
-    'Review for the ECOWAS region.');
-  timelineHash.set('2018 - Now', 'Facilitator of Trade, Investment and Competitiveness for the Nigerian Economic Summit Group');
-  timelineHash.set('2019', 'Delivered his Inaugural Lecture as Professor of Covenant University.\n' +
-    'Became a member of the Editorial Board of the Canadian Institute for International Law Expertise (CIFILE), Toronto.');
-  timelineHash.set('2019 - 2022', 'National Coordinator/ Country Team Leader of United Nations Industrial Development Organization (UNIDO) ' +
-    'Investment Survey in Nigeria\n' +
-    'Appointed by African Union (AU) as a member of Technical Working Group towards the Phase 2 of African Continental Free Trade on Investment Protocol\n' +
-    'This Investment Protocol was adopted in Feb. 2022 by the AU Head of States');
+  timelineHash.set('2012 - 2015', 'Appointed as one of the experts by African Union (AU) to develop the Pan-African' +
+    ' Investment Code (PAIC) which was adopted in 2015 by the African Union Heads of State.');
+  timelineHash.set('2015', 'Appointed as a Professor of International Economic Relations of the Covenant University.');
+  timelineHash.set('2016 - 2018', 'Participated in the negotiation of African Continental Free Trade Area (AfCTA) which ' +
+    'started with Trade in Goods and Services and Dispute Settlement Protocols in Phase I until it was adopted in 2018.');
+  timelineHash.set('2017', 'Thematic Lead of the Trade Commission of the Nigeria Economic Summit Group (NESG).\n' +
+    'Acropolis Phase I development commissioned; with Phase II beginning immediately after.');
+  timelineHash.set('2018 - 2020', 'Appointed United Nations Conference on Trade and Development (UNCTAD) Consultant of' +
+    ' Trade in Services Policy Review for the ECOWAS Region.');
+  timelineHash.set('2018 - Now', 'Facilitator of Trade, Investment and Competitiveness for the NESG.');
+  timelineHash.set('2019', 'Delivered his Inaugural Lecture as Professor of Covenant University on Sequencing and' +
+    ' Negotiating Nigeria’s Regional and Multilateral Trade \n' +
+    'Became a Member of the Editorial Board of Canadian Institute for International Law Expertise (CIFILE), Toronto.');
+  timelineHash.set('2019 - 2022', 'Appointed by AU as a member of Technical Working Group towards the Phase 2 of African ' +
+    'Continental Free Trade on Investment Protocol; and the Protocol was adopted in Feb. 2023 by the AU Head of States');
   timelineHash.set('2021 - 2022', 'Develop AfCFTA National Strategy for Nigeria under United Nations Economic Commission for Africa (UNECA).');
-  timelineHash.set('2021 - 2025', 'Coordinator of the National Development Plan by the Federal Government of Nigeria.');
-  timelineHash.set('2022 - Now', 'Appointed by ECOWAS Commission to develop working procedure of ECOWAS Common Investment Market Council ' +
-    'made up of all Ministers of Investment in the ECOWAS region.\n' +
-    'Continues to spread awareness and sensitisation lectures on AfCFTA and has successfully trained government organisations' +
+  timelineHash.set('2021 - 2025', 'Appointed as a Coordinator of one of the Technical Committee in the development of the' +
+    ' current National Development Plan (2021-2025) by the Federal Government of Nigeria.');
+  timelineHash.set('2022 - Now', 'Appointed by ECOWAS Commission to Develop Working Procedure of ECOWAS Common Investment' +
+    ' Market Council made up of all Ministers of Investment in the ECOWAS region.\n' +
+    'Continues to spread awareness and sensitisation lectures on AfCTA and has successfully trained government organisations' +
     ' including Nigerian Customs, Ministry of Finance, Ministry of Industry Trade and Investment, organised private sector,' +
     ' Central Bank of Nigeria, and others.');
-  timelineHash.set('2024', 'Jonathan Aremu is married with 4 Children and several grandchildren.');
+  timelineHash.set('2024', 'Jonathan Aremu is married with 4 Children and currently grandchildren.');
 
 
   return timelineHash;

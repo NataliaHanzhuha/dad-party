@@ -29,6 +29,7 @@ export const routes = [
 ];
 
 export const routesForMenu = Object.entries(routeNames)
+  .filter(([key, value]) => key !== 'Seats' && key !== 'Menu' && key !== 'Program')
   .map(([key, value]) => {
     return {path: value, name: key};
   });
