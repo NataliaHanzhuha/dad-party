@@ -46,7 +46,7 @@ function Story() {
   const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
   const timelineKeys = Array.from(timelineHash.keys());
 
-  function Photo({item}) {
+  function Photo({item, children}) {
     const text = timelineHash.get(item);
     const imageSrc = images[item] && images[item].length ? images[item][0] : null;
 
@@ -57,6 +57,7 @@ function Story() {
       <div className={styles.descriptionWrapper}
            onClick={() => toggleFullSizePhoto(item)}>
         <div className={styles.text}>{text}</div>
+        {children}
         <p className={styles.tip}>Click on image or text to see more...</p>
       </div>
     </>;
@@ -69,13 +70,18 @@ function Story() {
              placeholderClass={styles.previewImage}/>
 
       <div className={styles.timelineWrapper}>
-        {timelineKeys.map((year) => {
+        {timelineKeys.map((year, index) => {
           return <div key={year}
                       className={styles.yearWrapper}>
             <div className={styles.year}>{year}</div>
 
             <div className={styles.itemWrapper + ' photoWrapper'}>
-              <Photo item={year}/>
+              <Photo item={year}>
+                {timelineKeys.length === index + 1 &&
+                  <a className={styles.link}
+                     onClick={e => e.stopPropagation()}
+                     href="https://50642.lightfolio.com/gallery/jonathan-aremu/">Click here to see all photos in gallery</a>
+                }</Photo>
             </div>
           </div>;
         })}

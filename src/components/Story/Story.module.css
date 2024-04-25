@@ -171,6 +171,11 @@ i {
   margin-bottom: 40px;
 }
 
+.link {
+  text-decoration: underline;
+  color: var(--gold);
+}
+
 @media screen and (max-width: 375px) and (orientation: portrait) {
   .line {
     display: none;
