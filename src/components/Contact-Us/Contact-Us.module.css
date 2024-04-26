@@ -53,6 +53,32 @@ label {
   text-align: center;
   color: var(--gold);
 }
+.dd {
+  display: flex;
+  flex-direction: column;
+  /* overflow: auto; */
+  height: 100vh;
+  gap: 10px;
+}
+
+.image {
+  border-radius: 20px;
+  width: 46%;
+}
+
+.previewImage {
+  object-fit: contain;
+  width: 70%;
+  transform: translateY(2vh);
+  animation: pulse 8s infinite;
+}
+
+.video {
+  /*min-height: 30vh;*/
+  /*z-index: -3;*/
+  object-fit: contain;
+  width: 100%;
+}
 
 .header {
   margin: 0;

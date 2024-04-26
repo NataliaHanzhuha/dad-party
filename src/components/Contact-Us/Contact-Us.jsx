@@ -3,7 +3,8 @@ import { useState } from 'react';
 import { addDoc } from 'firebase/firestore';
 import { emailsCollectionRef } from '../../firebase';
 import { SlideShow } from '../Story/Story';
-import { partyPhoto } from '../../constants';
+import { bayo360Video, biographyPageVideo, parents360Video, partyPhoto } from '../../constants';
+import { Video } from '../Main/Main';
 
 export function ContactUs() {
   // const [form, setForm] = useState({email: '', name: ''});
@@ -33,12 +34,29 @@ export function ContactUs() {
   }
 
   return <section className={styles.section}>
-    <h3 className={styles.header}>70th Birthday Photos, held in Calgary, Canada (06.04.2024)</h3>
-    <Photo>
+
+    <div className={styles.dd}
+         style={{marginTop: '70vh'}}>
+      <h3 className={styles.header}>70th Birthday Photos, held in Calgary, Canada (06.04.2024)</h3>
+
+      <Photo>
         <a className={styles.link}
            onClick={e => e.stopPropagation()}
            href="https://50642.lightfolio.com/gallery/jonathan-aremu/">Click here to see more pictures from the Event</a>
-    </Photo>
+      </Photo>
+    </div>
+
+    <div className={styles.dd}>
+      <Video videoSrc={parents360Video()}
+             videoClass={styles.video}
+             placeholderClass={styles.previewImage}/>
+
+      <Video videoSrc={bayo360Video()}
+             videoClass={styles.video}
+             placeholderClass={styles.previewImage}/>
+    </div>
+
+
     {/*<div className={styles.heading}>*/}
     {/*  <p className={styles.description}>*/}
     {/*    Please leave us your email and name so we can send you a link to the event pictures and video*/}

@@ -480,7 +480,7 @@ export const biography = () => {
     'Played alongside esteemed players like the then Captain of Scorpion Team at Dodan Barack, then Colonel Joe Garba known ' +
     'then as the best shooter in Basketball in Africa; Garba later become a Major General in the Nigerian Army and also ' +
     'served as a Minister for Foreign Affairs.');
-  timelineHash.set('1973', 'Worked as a Teacher in Papir village, among the Tribe known as Kemberi in the current Kebbi ' +
+  timelineHash.set('1973', 'Worked as a Teacher in Papiri village, among the Tribe known as Kemberi in the current Kebbi ' +
     'State, but previously Kwara State in Nigeria between 1973 and 1974\n' +
     'Despite the poor living conditions among the Keberis, he performed his teaching duties with zeal, endeavouring to ' +
     'instil the value of education in the local populace, even amidst their initial reluctance');
@@ -514,17 +514,17 @@ export const biography = () => {
   timelineHash.set('1993', 'Became a Member of the Nigerian Institute of International Affairs (NIIA) IN 1993.\n' +
     'Became a Member of the Nigerian Society of International Law ');
   timelineHash.set('1993 - 2004', '1993: Joined Living Faith Church, Winners Chapel\n' +
-    '1994: Appointed as Chairman of the Winners Business Fellowship\n' +
     '1995: Ordained as a Deacon at the Living Faith Church\n' +
     '1996: Appointed as a Member of the Church Council, Chairman of Dominion Airlines and a Member/Financial Secretary ' +
     'of the Elder’s Council of the Living Faith Church, Lagos (later Faith Tabernacle).\n' +
+    '1997: Appointed as Chairman of the Winners Business Fellowship\n' +
     '1999: Appointed to establish the Living Faith Church’s Hospitality Unit \n' +
     '2004: Anointed/Ordained as a Pastor at Winners Chapel International.');
   timelineHash.set('1998', 'Became a Life Member of the Nigerian Society of International Law');
   timelineHash.set('2001', 'Concluded his PhD at the University of Abuja ');
   timelineHash.set('2002 - 2004', '2002: Appointed as a pioneer Member of the Covenant University Board of Regents.\n' +
-    '2003: Served as an Associate Lecturer in the Department of Economics and Development Studies.\n' +
-    '2004: Appointed as Associate Senior Lecturer and later Acting Vice Chancellor for Covenant University.');
+    '2003: Served as a Lecturer in the Department of Economics and Development Studies.\n' +
+    '2004: Appointed as a Senior Lecturer and later Acting Vice Chancellor for Covenant University.');
   timelineHash.set('2004', 'Journey with Economic Community of West African States (ECOWAS) Commission began following a' +
     ' presentation delivered at the Nigerian National Assembly on Trade and Trade Policy Coordination for Nigeria \n' +
     'A copy of the Presentation was sent to the then President of Nigeria, Olusegun Obasanjo, who responded with a Commendation Letter.\n' +
@@ -534,18 +534,18 @@ export const biography = () => {
   timelineHash.set('2006', 'Worked for BizClim of European Union (EU) to develop an Investment Policy Framework for the 15 Member States of ECOWAS.\n' +
     'This work led to the adoption of a move by the Head of States of ECOWAS on a common position on Investment Code and Policy.\n' +
     'Recruited by BizClim again along with 2 others experts from Europe to develop a draft of the Common Investment Code' +
-    ' and Investment Policy for Community, in line with the ECOWAS Treaty.');
+    ' and Investment Policy for the Community, in line with the ECOWAS Treaty.');
   timelineHash.set('2008', 'Engaged by ECOWAS Commission, after completion of the BizClim assignment to develop the draft' +
     ' of the Common Investment Code and Investment Policy for adoption of the Heads of States, which was finally adopted in 2018.');
   timelineHash.set('2009 - 2011', 'National Coordinator/ Country Team Leader for Nigeria on United Nations Industrial' +
     ' Development Organization (UNIDO) Afripanet Study on African Investment Survey in Nigeria');
   timelineHash.set('2010 - 2017', 'Appointed as a Member of the Board of Regents, and later Pro-Chancellor (2011-2012)' +
     ' of Landmark University, Omu Aran');
-  timelineHash.set('2012', 'An Acropolis-theme Park (owned by Market link Consults) received government approval for Construction');
+  timelineHash.set('2012', 'An Acropolis-themed Park (owned by Market link Consults) received government approval for Construction');
   timelineHash.set('2012 - 2015', 'Appointed as one of the experts by African Union (AU) to develop the Pan-African' +
     ' Investment Code (PAIC) which was adopted in 2015 by the African Union Heads of State.');
   timelineHash.set('2015', 'Appointed as a Professor of International Economic Relations of the Covenant University.');
-  timelineHash.set('2016 - 2018', 'Participated in the negotiation of African Continental Free Trade Area (AfCTA) which ' +
+  timelineHash.set('2016 - 2018', 'Participated in the negotiation of African Continental Free Trade Area (AfCFTA) which ' +
     'started with Trade in Goods and Services and Dispute Settlement Protocols in Phase I until it was adopted in 2018.');
   timelineHash.set('2017', 'Thematic Lead of the Trade Commission of the Nigeria Economic Summit Group (NESG).\n' +
     'Acropolis Phase I development commissioned; with Phase II beginning immediately after.');
@@ -581,6 +581,15 @@ export const mainPageVideo = () => {
 export const biographyPageVideo = () => {
   return imageLink('videos', 'biography.mp4', process.env.REACT_APP_VIDEO_IMAGE_TOKEN);
 }
+
+export const bayo360Video = () => {
+  return imageLink('videos', '24-20240406-163336.651055-slomo.mp4', process.env.REACT_APP_VIDEO_IMAGE_TOKEN);
+}
+
+export const parents360Video = () => {
+  return imageLink('videos', "Daddy & Mummy's 360.mp4", process.env.REACT_APP_VIDEO_IMAGE_TOKEN);
+}
+
 
 export const biographyImages = {
   '1954': [],
@@ -658,6 +667,9 @@ export const biographyImages = {
     getUrl('IMG-20240330-WA0000.remini-enhanced.png'),
     getUrl('IMG_8571.jpg'),
     getUrl('Screenshot_20230426_162720_Gallery.jpg'),
+    getUrl('57.jpg'),
+    getUrl('44.jpg'),
+    getUrl('69.jpg'),
   ],
 };
 
