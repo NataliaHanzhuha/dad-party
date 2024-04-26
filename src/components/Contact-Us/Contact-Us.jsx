@@ -1,15 +1,12 @@
 import styles from './Contact-Us.module.css';
-import { useState } from 'react';
-import { addDoc } from 'firebase/firestore';
-import { emailsCollectionRef } from '../../firebase';
 import { SlideShow } from '../Story/Story';
-import { bayo360Video, biographyPageVideo, parents360Video, partyPhoto } from '../../constants';
+import { bayo360Video, parents360Video, partyPhoto } from '../../constants';
 import { Video } from '../Main/Main';
 
 export function ContactUs() {
   // const [form, setForm] = useState({email: '', name: ''});
   // const [send, setStatus] = useState(false);
-  const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
+  // const [fullSizePhoto, toggleFullSizePhoto] = useState(null);
 
   // const setValue = (e) => {
   //   setForm({...form, [e.target.name]: e.target.value});
@@ -22,13 +19,13 @@ export function ContactUs() {
   //   });
   // };
 
-  function Photo({ children}) {
+  function Photo({children}) {
 
     return <><SlideShow images={partyPhoto}/>
       {/*{imageSrc && <div className={styles.line}></div>}*/}
       {/*<div className={styles.descriptionWrapper}*/}
       {/*     onClick={() => toggleFullSizePhoto(item)}>*/}
-        {children}
+      {children}
       {/*</div>*/}
     </>;
   }
