@@ -98,7 +98,7 @@ function Wishes() {
 
   const formContent = <>
     <label htmlFor="textarea">Your Wishes
-      <textarea placeholder="Enter something for birthday boy"
+      <textarea placeholder="Please, leave your wishes here."
                 value={wish}
                 className={styles.textarea}
                 autoFocus={true}
