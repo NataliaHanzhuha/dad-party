@@ -48,6 +48,17 @@ label {
   padding: 5px;
 }
 
+.link {
+  text-decoration: underline;
+  text-align: center;
+  color: var(--gold);
+}
+
+.header {
+  margin: 0;
+  text-align: center;
+}
+
 .greating {
   color: var(--gold);
   text-align: center;

@@ -9,7 +9,7 @@ import { biography, biographyImages, biographyPageVideo } from '../../constants'
 const timelineHash = biography();
 const images = biographyImages;
 
-function SlideShow({images, maxPhoto = false, imageClick}) {
+export function SlideShow({images, maxPhoto = false, imageClick}) {
   const arr = images.map((img) => {
     return {
       original: img,
@@ -77,11 +77,12 @@ function Story() {
 
             <div className={styles.itemWrapper + ' photoWrapper'}>
               <Photo item={year}>
-                {timelineKeys.length === index + 1 &&
-                  <a className={styles.link}
-                     onClick={e => e.stopPropagation()}
-                     href="https://50642.lightfolio.com/gallery/jonathan-aremu/">Click here to see all photos in gallery</a>
-                }</Photo>
+                {/*{timelineKeys.length === index + 1 &&*/}
+                {/*  <a className={styles.link}*/}
+                {/*     onClick={e => e.stopPropagation()}*/}
+                {/*     href="https://50642.lightfolio.com/gallery/jonathan-aremu/">Click here to see all photos in gallery</a>*/}
+                {/*}*/}
+              </Photo>
             </div>
           </div>;
         })}

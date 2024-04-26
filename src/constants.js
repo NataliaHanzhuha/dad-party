@@ -658,14 +658,17 @@ export const biographyImages = {
     getUrl('IMG-20240330-WA0000.remini-enhanced.png'),
     getUrl('IMG_8571.jpg'),
     getUrl('Screenshot_20230426_162720_Gallery.jpg'),
-    getUrl('57.jpg'),
-    getUrl('44.jpg'),
-    getUrl('69.jpg'),
-    getUrl('JS5A0654.jpg'),
-    getUrl('JS5A0679.jpg'),
-    getUrl('_74A9603.jpg'),
-    getUrl('_74A9541.jpg'),
-    getUrl('JS5A1231.jpg'),
-    getUrl('JS5A0779.jpg'),
   ],
 };
+
+export const partyPhoto = [
+  getUrl('57.jpg'),
+  getUrl('44.jpg'),
+  getUrl('69.jpg'),
+  getUrl('JS5A0654.jpg'),
+  getUrl('JS5A0679.jpg'),
+  getUrl('_74A9603.jpg'),
+  getUrl('_74A9541.jpg'),
+  getUrl('JS5A1231.jpg'),
+  getUrl('JS5A0779.jpg'),
+];
