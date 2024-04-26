@@ -32,8 +32,7 @@ export function ContactUs() {
 
   return <section className={styles.section}>
 
-    <div className={styles.dd}
-         style={{marginTop: '70vh'}}>
+    <div className={styles.dd1}>
       <h3 className={styles.header}>70th Birthday Photos, held in Calgary, Canada (06.04.2024)</h3>
 
       <Photo>
