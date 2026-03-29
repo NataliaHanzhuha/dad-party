@@ -4,7 +4,7 @@ import { Story } from './components/Story';
 import { Wishes } from './components/Wishes';
 import { Main } from './components/Main';
 import { Events } from './components/Events';
-import { ContactUs } from './components/Contact-Us';
+// import { ContactUs } from './components/Contact-Us';
 import {PartyMenu} from './components/PartyMenu';
 import Seats from './components/Seats/Seats';
 
@@ -15,7 +15,7 @@ export const routeNames = {
   Seats: '/seats',
   Menu: '/party-menu',
   Program: '/events',
-  Media: '/contact-us',
+  // Media: '/contact-us',
 };
 
 export const routes = [
@@ -24,12 +24,12 @@ export const routes = [
   {path: routeNames.Seats, element: <Seats/>},
   {path: routeNames.Menu, element: <PartyMenu/>},
   {path: routeNames.Program, element: <Events/>},
-  {path: routeNames.Media, element: <ContactUs/>},
+  // {path: routeNames.Media, element: <ContactUs/>},
   {path: routeNames.Main, element: <Main/>},
 ];
 
 export const routesForMenu = Object.entries(routeNames)
-  .filter(([key, value]) => key !== 'Seats' && key !== 'Menu' && key !== 'Program')
+  // .filter(([key, value]) => key !== 'Seats' && key !== 'Menu' && key !== 'Program')
   .map(([key, value]) => {
     return {path: value, name: key};
   });
